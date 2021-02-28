@@ -8,15 +8,17 @@ header nav ul img{
 }
 header nav ul li a p{
     color: grey;
+    margin-top: 2px;
 
 }
 header nav ul{
     
     width: 40%;
-    position:absolute;
-    width: 40%;
-    right: 18px;
-    top: -19px;
+    position: absolute;
+    width: 586px;
+    right: 11px;
+    height: 140px;
+    top: -30px;
    
     
 }
@@ -33,13 +35,14 @@ a{
 }
 header nav ul li:hover{
     transform: scale(1.3);
+    transition: all 0.5s;
 }
 
  
 header{
     position:absolute;
     top: 5%;
-    height: 18%;
+    height: 125px;
  
     width: 100%;
   
@@ -76,7 +79,7 @@ header{
 .start-button{
     background-color: #000000a3;
     left: 345px;
-    top: 102px;
+    top: 258px;
     width: 661px;
     height: 421px;
     z-index: 2;
@@ -94,27 +97,34 @@ header{
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
-} */
+} 
 
 .info{
     width: 945px;
     margin: 20px auto;
-    background-color: #132b3a;
+    background-color: #88bee0;
     overflow: hidden;
     padding: 20px;
     border-radius: 15px;
+    position: absolute;
+    top: 160px;
+    left: 190px;
 
 }
 .info .name{
     float: left;
     width: 50%;
-    color: white;
+    color: black;
+    font-weight: bolder;
+    font-family: cursive;
 }
 .info .score{
     float:right;
     width: 50%;
     text-align: right;
-    color: white;
+    color: black;
+    font-weight: bolder;
+    font-family: cursive;
 }/* level 1 ///////////////////////////////////////////////////////////////////////////////////////*/
 .container-game{
   
@@ -122,6 +132,8 @@ header{
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
+    position: relative;
+    top: 240px;
 }
 .container-game .game-block{
     height: 200px;
@@ -136,13 +148,13 @@ header{
     pointer-events: none;
 }
 .container-game .game-block .front{
-background-color: black;
+background-color:  #4e003a;
 line-height: 200px;
 border-radius: 20px;
 }
 .container-game .game-block .front::before{
     content: '?';
-    color: burlywood;
+    color: white;
     text-align: center;
     font-size: 100px;
     font-weight: bold;
@@ -151,7 +163,7 @@ border-radius: 20px;
     background-color: rgb(133 179 141);
     transform: rotateY(180deg);
     border-radius: 20px;
-    box-shadow: 10px 10px 10px  rgb(241, 144, 144)
+    box-shadow: 10px 10px 10px  rgb(241, 144, 144);
 
 }
 .container-game .game-block .back img{
@@ -177,9 +189,11 @@ border-radius: 20px;
 /* level 2 header/////////////////////////////////////////////////////////////////////*/
 .level2{
     text-align: center;
-    background: beige;
+    background: #7d7d63;;
     height: 80px;
     border-radius: 15px;
+    position: relative;
+    top: 252px;
 }
 .level2 h1{
     text-align: center;
@@ -194,9 +208,11 @@ border-radius: 20px;
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
-    position: absolute;
-    left: 340px;
-    top: 650px;
+    /* position: absolute; */
+    /* left: 340px; */
+    /* top: 650px; */
+    position: relative;
+    top: 286px;
 }
 .container-game1 .game-block{
     height: 200px;
@@ -211,13 +227,13 @@ border-radius: 20px;
     pointer-events: none;
 }
 .container-game1 .game-block .front{
-background-color: black;
+background-color:  #4e003a;
 line-height: 200px;
 border-radius: 20px;
 }
 .container-game1 .game-block .front::before{
     content: '?';
-    color: burlywood;
+    color: white;
     text-align: center;
     font-size: 100px;
     font-weight: bold;
@@ -226,6 +242,7 @@ border-radius: 20px;
     background-color: rgb(133 179 141);
     transform: rotateY(180deg);
     border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgb(241, 144, 144);
 
 }
 .container-game1 .game-block .back img{
@@ -249,10 +266,10 @@ border-radius: 20px;
 /*/////////////////////////////////// level 3 */
 .level3{
     text-align: center;
-    background: beige;
+     background: #7d7d63;
     height: 80px;
     border-radius: 15px;
-    margin-top: 475px;
+    margin-top: 341px;
 }
 .level3 h1{
     text-align: center;
@@ -263,9 +280,11 @@ border-radius: 20px;
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
-    position: absolute;
-    left: 340px;
+    /* position: absolute; */
+    /* left: 340px; */
     margin-top: 26px;
+    position: relative;
+    top: 30px;
 }
 .container-game2 .game-block{
     height: 200px;
@@ -280,7 +299,7 @@ border-radius: 20px;
     pointer-events: none;
 }
 .container-game2 .game-block .front{
-background-color: black;
+background-color: #4e003a;
 line-height: 200px;
 border-radius: 20px;
 }
@@ -295,6 +314,7 @@ border-radius: 20px;
     background-color: rgb(133 179 141);
     transform: rotateY(180deg);
     border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgb(241, 144, 144);
 
 }
 .container-game2 .game-block .back img{
@@ -318,7 +338,7 @@ border-radius: 20px;
 footer{
     background-color:#ccc;
     position: relative;
-    top: 1021px;
+    top: 350px;
     text-align: center;
     font-family: cursive;
     font-size: 20px;
