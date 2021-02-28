@@ -44,4 +44,6 @@ Group Members :
 - Mohammad Alkhazali
 - Anagheem Bayan
 
+v1.0.0
+
 201 Final Project
