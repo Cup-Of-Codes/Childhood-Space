@@ -5,30 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Childhood Space</title>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
       
-<header>
+<header class="navlist">
     <div class="logo">
         <img src="img/cooltext377707218486653.png" alt="">
     </div>
-        <!-- <div>
-            <p class="a">C</p>
-            <p class="b">h</p>
-            <p class="c">i</p>
-            <p class="d">l</p>
-            <p class="e">d</p>
-            <p class="f">h</p>
-            <p class="g">o</p>
-            <p class="h">O</p>
-            <p class="i">d</p>
-        </div>
-        
-    </div>
-    <p class="logop">Space</p> -->
+    
 <nav>
     <ul>
         <li>
@@ -46,7 +33,7 @@
     <li>
     <a href="">
            <img src="img/building.png" alt="">
-           <p>Games</p>   
+           <p>Game</p>   
         </a>
     </li>
     <li>
@@ -62,36 +49,43 @@
 
 
 <main>
-
-<div>
-    <button class="b1" type="button">Home</button>
-    <button class="b2" type="button">Games</button><br>
-    <button class="b3" type="button">Learn</button>
-    <button class="b4" type="button">About us</button>
+  
+<div class="cont">
+    <form id="form">
+        <fieldset>
+            <legend></legend>
+    <label for="name">Your name:</label>
+    <input type="text" id="name" name="name">
+    
+    <input type="submit" value="Click Here" id ="saveName">
+   
+</fieldset>
+</form>
+    <img class="game" src="img/game2.jpg" alt="">
+    <img class="learn"src="img/learn.jpg" alt="">
+    <button class="b1" type="button" onclick="document.location=game.html">Game</button> 
+    <button class="b2" type="button"onclick="document.location=learn.html">Learn</button>
+    
 </div>
-    <video autoplay loop id="myVideo">
-        <source src="img/Kids - 26796.mp4" type="video/mp4">
-       
-      </video>
-      <!-- <div class="txt">
-      <h1 >Welcome to fun world</h1>
-      <p>Here each child can play and study in funy ways</p>
-    </div> -->
+   
+      
+      
+  
 </main>
 
 
 <footer>
    <div class="t1"></div>
    <p class="p1">Childhood</p>
-   <p class="p1">Space</p>
+   <p class="p2">Space</p>
    <div class="t2"></div>
-<ul>
+<ul class="soc">
     <li><img src="https://raw.githubusercontent.com/LTUC/amman-201d14/main/class-10/lab-a/lab-assets/fb-icon.png" alt=""></li>
     <li><img src="https://raw.githubusercontent.com/LTUC/amman-201d14/main/class-10/lab-a/lab-assets/insta-icon.png" alt=""></li>
     <li><img src="https://raw.githubusercontent.com/LTUC/amman-201d14/main/class-10/lab-a/lab-assets/pint-icon.png" alt=""></li>
 </ul>
 
-<p class="right">2021&copy;Childhood Space. All Rights Reserved</p>
+<p class="p3">2021&copy;Childhood Space. All Rights Reserved</p>
 </footer>
 <script src="app.js"></script>
 </body>
