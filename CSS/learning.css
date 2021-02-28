@@ -68,7 +68,6 @@
     position: relative;
     top : 45vh;
     left: 5vw;
-    background-color: wheat;
     width: 90%;
     height: 200%;
     padding-bottom: 30px;
@@ -121,7 +120,7 @@
 }
 
 #yourLesson{
-    width: 70%;
+    width: 100%;
     position: relative;
     top: 10vh;
     left: 5vw;
@@ -145,4 +144,24 @@
     position: relative;
     left:13vw;
     
+}
+
+#tableContent tr .numsNav {
+    padding:17px;
+    font-size: xx-large;
+    background-color: paleturquoise;
+    transition: all .4s ease-in-out;
+}
+
+#tableContent tr .numsNav:hover{
+    background-color: rgb(2, 145, 228);
+    border-radius: 25px;
+    color: rgb(244, 202, 255);
+    transform: scew(1.1);
+    
+}
+
+#tableContent tr .numsNav:active {
+    transform: scale(0.9);
+
 }
