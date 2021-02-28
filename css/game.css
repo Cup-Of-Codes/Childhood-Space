@@ -12,7 +12,7 @@ body{
 /**/
 .start-button{
     background-color: #000000a3;
-    left: 353px;
+    left: 345px;
     top: 102px;
     width: 661px;
     height: 421px;
@@ -52,14 +52,14 @@ body{
     width: 50%;
     text-align: right;
     color: white;
-}
+}/* level 1 ///////////////////////////////////////////////////////////////////////////////////////*/
 .container-game{
     display: flex;
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
 }
-.game-block{
+.container-game .game-block{
     height: 200px;
     transition: transform .5s;
     transform-style: preserve-3d;
@@ -87,12 +87,14 @@ border-radius: 20px;
     background-color: rgb(133 179 141);
     transform: rotateY(180deg);
     border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgb(241, 144, 144)
 
 }
 .container-game .game-block .back img{
     width: 206px;
-    height: 140px;
-    margin-top: 30px;
+    height: 200px;
+    margin-top: 0;
+    border-radius: 20px;
 }
 .container-game .game-block .face{
     position: absolute;
@@ -105,3 +107,160 @@ border-radius: 20px;
 .container-game .game-block.matched{
     transform: rotateY(180deg);
 }
+/*end level 1////////////////////////////////////////*/
+/*container 2*/
+/* level 2 header/////////////////////////////////////////////////////////////////////*/
+.level2{
+    text-align: center;
+    background: beige;
+    height: 80px;
+    border-radius: 15px;
+}
+.level2 h1{
+    text-align: center;
+    padding: 15px;
+}
+/*container////////////////////////////////////////////////////////////////////////////////////////////////// 2*/
+
+
+
+.container-game1{
+    display: flex;
+    width: 680px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    position: absolute;
+    left: 340px;
+    top: 650px;
+}
+.container-game1 .game-block{
+    height: 200px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    flex: 1 0 150px;
+    margin: 0 10px 20px;
+}
+/*no clicking*/
+.container-game1.no-click{
+    pointer-events: none;
+}
+.container-game1 .game-block .front{
+background-color: black;
+line-height: 200px;
+border-radius: 20px;
+}
+.container-game1 .game-block .front::before{
+    content: '?';
+    color: burlywood;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+.container-game1 .game-block .back {
+    background-color: rgb(133 179 141);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+
+}
+.container-game1 .game-block .back img{
+    width: 149px;
+    height: 200px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+.container-game1 .game-block .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility:hidden;
+}
+.container-game1 .game-block.is-flip,
+.container-game1 .game-block.matched{
+    transform: rotateY(180deg);
+}
+
+/*/////////////////////////////////// level 3 */
+.level3{
+    text-align: center;
+    background: beige;
+    height: 80px;
+    border-radius: 15px;
+    margin-top: 475px;
+}
+.level3 h1{
+    text-align: center;
+    padding: 15px;
+}
+.container-game2{
+    display: flex;
+    width: 680px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    position: absolute;
+    left: 340px;
+    margin-top: 26px;
+}
+.container-game2 .game-block{
+    height: 200px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    flex: 1 0 120px;
+    margin: 0 10px 20px;
+}
+/*no clicking*/
+.container-game2.no-click{
+    pointer-events: none;
+}
+.container-game2 .game-block .front{
+background-color: black;
+line-height: 200px;
+border-radius: 20px;
+}
+.container-game2 .game-block .front::before{
+    content: '?';
+    color: burlywood;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+.container-game2 .game-block .back {
+    background-color: rgb(133 179 141);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+
+}
+.container-game2 .game-block .back img{
+    width: 151px;
+    height: 200px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+.container-game2 .game-block .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility:hidden;
+}
+.container-game2 .game-block.is-flip,
+.container-game2 .game-block.matched{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
