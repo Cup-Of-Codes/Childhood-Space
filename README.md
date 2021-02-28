@@ -20,7 +20,7 @@ Childhood Space it is a place which children can learn & have fun at same time.
 - *Sara* add some images and form to home page , edit some styling , help anagheem to style memory game.
 - *Mohammad & Anagheem* add levels to memory game.
 - *Khalid & Malak* start work with learning page ,add:
-  - learning option : Math or Englis
+  - learning option : Math or English
   - Math lessons Option : Numbers Lesson, Addition lesson or Substraction lesson
     
 
@@ -42,5 +42,6 @@ Group Members :
 - Khaled Bassam
 - Sara Altaweel 
 - Mohammad Alkhazali
+- Anagheem Bayan
 
 201 Final Project
