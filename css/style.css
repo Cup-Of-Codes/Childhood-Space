@@ -42,6 +42,12 @@ a{
 }
 header nav ul li:hover{
     transform: scale(1.3);
+    transition: all 0.5s;
+    
+
+}
+header nav ul li a p:hover{
+    color:orangered;
 }
 
  
@@ -59,15 +65,7 @@ header{
 
 
 }
-.tab{
-    position: absolute;
-    width: calc(100%/16);
-    height: 5px;
-    background-color: orange;
-    left: 815px;
-    border: 5px;
-    top: 110px;
-}  
+
 .logo img{
     position: absolute;
     left: 20px;
@@ -214,6 +212,7 @@ main div{
 }
 .game:hover{
     transform: scale(1.3);
+    transition: all 0.5s;
 }
 .learn{
     position:absolute;
@@ -226,6 +225,7 @@ main div{
 }
 .learn:hover{
     transform: scale(1.3);
+    transition: all 0.5s;
 }
 input{
     padding: 12px 20px;
