@@ -51,24 +51,24 @@
 <main>
      
     <div class="firstGame">
-        <img class="memGame" src="http://1.bp.blogspot.com/--JqeR9TYtOg/TxqOnBQg0aI/AAAAAAAAAg0/XwkkgBPMcOM/s320/CogniFit%2BMind%2BQuiz%2B%2526%2Bmemory.jpg" alt="">
-        <button id="memoryGB"> Start Memory Game</button>
+        <img class="memGame" src="https://files.slack.com/files-pri/TNGRRLUMA-F01PQ4AFSUA/memorygame.jpg">
+        <button onclick="playGame()"> Start Memory Game</button>
     </div>
     <div class="secondGame">
-        <img class="shapgame" src="https://www.themagiccrayons.com/resources/Kids-Shapes-Games.jpg" alt="">
+        <img class="shapgame" src="https://files.slack.com/files-pri/TNGRRLUMA-F01Q2N87X97/shapes.jpg" alt="">
     <button> Start Shapes Game</button>
     </div>
        
-   <div id="insertHere"></div>
+ 
 
 
 
-<div id="memoryInsert">
+<div id="level1">
 
-<div class="start-button">
+<div class="start-button" id="div1">
             <span>start game</span>
         </div>
-      <div class="info">
+      <div class="info"  id="div2">
           <div class="name">
               Hello:<span></span>
           </div>
@@ -76,7 +76,7 @@
               Wrong Trys :<span>0</span>
           </div>
       </div>    
-     <div class="container-game">
+     <div class="container-game" id="div3">
 <div class="game-block" data-technolog="img1">
     <div class="face front"></div>
     <div class="face back">
@@ -117,13 +117,13 @@
 </div> 
       </div> 
      <!--end level 1-->
-
-
+    </div>
+   <button onclick="secondLevel()" id="btn2"> Next Level</button>
      <div class="level2">
      <h1>Level 2 </h1>
      </div>
      
-     <div class="container-game1">
+     <div class="container-game1" id="div4">
         <div class="game-block" data-technolog="gambol">
             <div class="face front"></div>
             <div class="face back">
@@ -173,12 +173,12 @@
             </div>
         </div>
      </div>
-       
+     <button onclick="thirdLevel()" id="btn3"> Next Level</button>
         <div class="level3">
             <h1>Level 3 </h1>
             </div> 
-
-         <div class="container-game2">
+          
+         <div class="container-game2" id="div5">
            <div class="game-block" data-technolog="spong1">
                <div class="face front"></div>
                <div class="face back">
@@ -256,8 +256,12 @@
              </div>
            
         </div>
+        <!-- the second game -->
+        <div id="">
 
+        </div>
 
+  
     </main>
     <footer>
         <div class="t1"></div>

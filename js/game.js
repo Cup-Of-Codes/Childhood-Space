@@ -3,24 +3,44 @@
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
-let buttonMemory=document.getElementById('memoryGB')
-buttonMemory.addEventListener('click', showingMemGam)
-function showingMemGam(event){
-    event.preventDefault();
-    let divGame1=document.getElementById('insertHere')
-    let divInsertGmae=document.getElementById('memoryInsert')
-    divGame1.appendChild(divInsertGmae)
+// let buttonMemory=document.getElementById('memoryGB')
+// buttonMemory.addEventListener('click', showingMemGam)
+function playGame(){
+    document.getElementById('div1').style.display='flex';
+    document.getElementById('div2').style.display='flex';
+    document.getElementById('div3').style.display='flex';
+    document.getElementById('btn2').style.display='block';
+}
+
+
+function secondLevel(){
+    document.getElementById('btn2').remove();
+    document.getElementById('div1').remove();
+    // document.getElementById('div2').remove();
+    document.getElementById('div3').remove();
+    document.getElementById('div4').style.display='flex';
+    document.getElementById('btn3').style.display='block';
+
+}
+function thirdLevel(){
+    document.getElementById('div4').remove();
+    document.getElementById('div5').style.display='flex'; 
+}
+
+
+   
 
 
 document.querySelector('.start-button span').onclick=function(){
-    let yourName=prompt('whats your name');
+    // let yourName=prompt('whats your name');
     //console.log(yourName);
-    if(yourName===null ||yourName===''){
-    document.querySelector('.name span').textContent='Super Hero';
-}else{
-    document.querySelector('.name span').textContent=yourName;
-}
-document.querySelector('.start-button').remove();
+    document.querySelector('.start-button').remove();
+
+//     if(yourName===null ||yourName===''){
+//     document.querySelector('.name span').textContent='Super Hero';
+// }else{
+//     document.querySelector('.name span').textContent=yourName;
+// }
 }
 //start page work
 let duration=1000;
@@ -247,7 +267,7 @@ function checkImage2(first,second){
     }
 }
 
-}
+
 
 
 
