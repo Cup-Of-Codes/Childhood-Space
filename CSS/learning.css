@@ -165,3 +165,9 @@
     transform: scale(0.9);
 
 }
+
+.numsDiv {
+    position: relative;
+    top : 12vh;
+    left: 4vw;
+}

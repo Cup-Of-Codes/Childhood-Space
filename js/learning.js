@@ -111,7 +111,7 @@ function chooseOne(event) {
         sectionOp.removeEventListener('click', chooseOne);
     }
     else if (eventValue === 'english' || eventValue === 'englishImg' || eventValue === 'englishP') {
-    }
+    }       
 
 
 }
@@ -122,10 +122,19 @@ function chooseLesson(event) {
     event.preventDefault();
     let value = event.target.id;
     console.log(event);
+    
     let trEl, tdEl;
     let h3, img;
+    let rows;
     switch (value) {
         case 'numbers':
+            rows =tableContentEl.getElementsByTagName('tr').length;
+
+            for (let i = 0; i < rows; i++) {
+                tableContentEl.deleteRow(i);
+                
+            }
+             //console.log(tableContentEl);
             trEl = document.createElement('tr');
             tableContentEl.appendChild(trEl);
             for (let i = 0; i < numbersLesson.arrayOfElemnts.length; i++) {
@@ -137,7 +146,14 @@ function chooseLesson(event) {
             }
             trEl.addEventListener('click', chooseNumber);
             break;
+
         case 'add':
+            rows =tableContentEl.getElementsByTagName('tr').length;
+
+            for (let i = 0; i < rows; i++) {
+                tableContentEl.deleteRow(i);
+                
+            }
             //console.log(tableContentEl);
             for (let i = 0; i < 9; i++) {
                 trEl = document.createElement('tr');
@@ -208,6 +224,12 @@ function chooseLesson(event) {
             }
             break;
         case 'sub':
+            rows =tableContentEl.getElementsByTagName('tr').length;
+
+            for (let i = 0; i < rows; i++) {
+                tableContentEl.deleteRow(i);
+                
+            }
             break;
 
     }
@@ -220,15 +242,12 @@ function chooseNumber(event) {
     let value = event.target.innerText;
     //console.log(value);
     let imgEl ,tdEl,trEl;
-    trEl = document.createElement('tr');
-    tableContentEl.appendChild(trEl);
+    imgEl = document.createElement('img');
+    sectionChoices.appendChild(imgEl);
     switch (value) {
         case 'Zero':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[0].img);
+            imgEl.setAttribute('class','numsDiv');
             break;
         case 'One':
             tdEl = document.createElement('td');
