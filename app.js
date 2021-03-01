@@ -18,8 +18,19 @@ function showResult(event){
    
     user = event.target.name.value;
     console.log(showResult);
+
     save();
-    alert('welcome '+ user);
+    
+    let devContent = document.getElementById('myPopup');
+    devContent.textContent ='Welcome: ' + user;
+    console.log(devContent);
+    myFunction();
+    
+}
+
+function myFunction(){
+    let popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
     
 }
 

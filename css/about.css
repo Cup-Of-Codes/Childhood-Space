@@ -1,3 +1,13 @@
+body{
+    
+    background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif);
+    /* background-image: linear-gradient(to right, rgb(236, 127, 127) , rgb(236, 236, 22)); */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header nav ul img{
     width:70px;
     height: 70px;
@@ -73,12 +83,12 @@ header{
 
 }
 footer{
-    background-color: grey;
+    background-color:  rgb(171, 223, 230);
     position: relative;
     top: 1021px;
     text-align: center;
     font-family: cursive;
-    font-size: 20px;
+    font-size: 15px;
     
 } 
 .soc li{
@@ -86,18 +96,191 @@ footer{
     margin: 20px;
 
 }
+.soc img{
+    width:70% ;
+}
 
 .t1{
     border: 4px solid black;
 }
-div{
-    position: absolute;
-    top: 30px;
-    margin-top: 200px;
+  .image{
+    /* position: absolute; */
+    /* top: 30px; */
+    margin-top: 250px;
+    
+
+   
 
 }
-main div img{
+ .image img{
     
-    width: 30%;
-    height: 250px
+    width: 22%;
+    height: 230px;
+    border: 5px solid rgb(14, 13, 13);
+    margin-left: 20px;
+    /* border-radius: 50%; */
+} 
+.two{
+    margin-left: 180px;
+}
+/* .social1{
+    position: absolute;
+    top: 30px;
+    margin-top: 550px;
+    margin-left: 280px;
+    font-size: 30px;
+
+
+} */
+.moh{
+    filter: drop-shadow(8px 8px 10px green);
+}
+.moh:hover{
+    transform:skewX(1.8deg);
+}
+.kh{
+    position: absolute;
+    
+    left: 1000px;
+    top: 621px;
+    filter: drop-shadow(8px 8px 10px rgb(251, 255, 1));
+}
+.kh:hover{
+    transform:skewX(1.8deg);
+}
+.sa{
+    position: absolute;
+    left: 1000px;
+    filter: drop-shadow(8px 8px 10px rgb(255, 0, 0));
+}
+.kh:hover{
+    transform:skewX(1.8deg);
+}
+.ana{
+    position: absolute;
+    top: 621px;
+    right: 1031px;
+    filter: drop-shadow(8px 8px 10px rgb(26, 1, 255));
+}
+.kh:hover{
+    transform:skewX(1.8deg);
+}
+.mal{
+    position: absolute;
+    top: 435px;
+    left: 481px;
+    filter: drop-shadow(8px 8px 10px rgb(0, 162, 255));
+}
+.kh:hover{
+    transform:skewX(1.8deg);
+}
+.mohammad h1{
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 120px;
+    left: 27px;
+    font-size: 30px;
+    font-family: cursive;
+}
+ .mohammad img{
+    
+     margin-right: 10px;
+     margin-bottom: 20px;
+     margin-left: 10px;
+   margin-top: 50px;
+     width: 10%;
+      
+}
+.mohammad section{
+    position: absolute;
+    left: 50px;
+}
+.sara h1{
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 120px;
+    left: 1070px;
+    font-size: 30px;
+    font-family: cursive;
+}
+.sara img{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  margin-top: 50px; 
+  width: 10%;
+}
+.sara section{
+    position: absolute;
+    left: 1080px;
+    bottom: 70px;
+}
+.anagheem h1{
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 120px;
+    left: 27px;
+    font-size: 30px;
+    font-family: cursive;
+    top: 871px;
+}
+.anagheem img{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  margin-top: 50px;
+  width: 10%;
+}
+.anagheem section{
+    position: absolute;
+    left: 50px;
+    top: 870px;
+}
+.malak h1{
+    position: absolute;
+    /* margin-bottom: 40px;
+    bottom: 400px; */
+    left: 550px;
+    font-size: 30px;
+    font-family: cursive;
+    top: 693px;
+}
+.malak img{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  margin-top: 50px;
+  width: 10%;
+}
+.malak section{
+    position: absolute;
+    left: 570px;
+    top: 690px;
+}
+.khaled h1{
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 120px;
+    left: 1070px;
+    font-size: 30px;
+    font-family: cursive;
+    top: 871px;
+}
+.khaled img{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  margin-top: 50px; 
+  width: 10%;
+}
+.khaled section{
+    position: absolute;
+    left: 1085px;
+    top: 870px;
+}
+.final{
+    position: absolute;
+    top: 1000px;
+   left: 180px;
+   width: 70%;
 }
