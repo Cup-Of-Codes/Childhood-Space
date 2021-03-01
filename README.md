@@ -50,8 +50,9 @@ Group Members :
 - Khaled Bassam
 - Sara Altaweel 
 - Mohammad Alkhazali
-- Anagheem Bayan
 
-v1.0.0
+- Anagheem Bayan 
+
+
 
 201 Final Project
