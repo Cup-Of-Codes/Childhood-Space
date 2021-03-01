@@ -22,7 +22,15 @@ Childhood Space it is a place which children can learn & have fun at same time.
 - *Khalid & Malak* start work with learning page ,add:
   - learning option : Math or English
   - Math lessons Option : Numbers Lesson, Addition lesson or Substraction lesson
-    
+
+
+**Monday Mar 1** :
+- *Sara* : Edit home page , add background , add popup message , work in contact us page and add some styling.
+- *Mohammad* : help Anaghemm & Khalid to edit memory game. add color lesson with Malak.
+- *Malak* : add Number & substraction lesson , work with mohammad to add English learning , add colors lesson & Sense lessson.
+- *Anagheem* : work with khaled to edit Memory game , and trying to make shapes game.
+- *Khalid* : work with Anagheem to edit Memory game
+
 
 Wireframes :
 ![home_wireframe](img/home-wireframe.PNG)
