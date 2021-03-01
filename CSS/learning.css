@@ -140,11 +140,7 @@
    margin-top: -40px;
 }
 
-.imgCentered{
-    position: relative;
-    left:13vw;
-    
-}
+
 
 #tableContent tr .numsNav {
     padding:17px;
@@ -167,7 +163,17 @@
 }
 
 .numsDiv {
-    position: relative;
-    top : 12vh;
-    left: 4vw;
+position: absolute;
+right : 100px;
+bottom: -400px;
 }
+
+.imgSub {
+    padding-top: 45px;
+    margin-left: -25vw;
+}
+/* 
+#twotriangle {
+    padding-top: 10px;
+    margin-top: -20px;
+} */
