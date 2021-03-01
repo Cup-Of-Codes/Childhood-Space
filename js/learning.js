@@ -171,14 +171,16 @@ function chooseOne(event) {
 
 }
 
+let index;
+let colorImg;
+let trEl, tdEl;
+
 sectionEL.addEventListener('click', chooseLesson);
 
 function chooseLesson(event) {
   event.preventDefault();
   let value = event.target.id;
   console.log(event);
-
-  let trEl, tdEl;
   let h3, img;
   let rows;
   switch (value) {
@@ -351,17 +353,19 @@ function chooseLesson(event) {
       trEl.appendChild(tdEl);
       tdEl.textContent = colorsLesson.arrayOfElemnts[i].elementName;
       tdEl.setAttribute('class', 'numsNav');
-      tdEl.setAttribute('id', 'colorChoice');
+      tdEl.setAttribute('style','color: darkgray;')
+      
     }
 
-    let index = generateRandomIndex();
-    console.log(index);
-    console.log(colorsLesson.arrayOfElemnts[index]);
-    let colorimgEl = document.createElement('img');
-    divLessonEl.appendChild(colorimgEl);
-    colorimgEl.setAttribute('src',colorsLesson.arrayOfElemnts[index].img);
-    colorimgEl.setAttribute('class','colorimg');
-
+    let trElQ = document.createElement('tr');
+    tableContentEl.appendChild(trElQ); 
+    let tdElQ = document.createElement('td');
+    trElQ.appendChild(tdElQ);
+    tdElQ.textContent = 'What is this color ?? ';
+    tdElQ.setAttribute('id' ,'question');
+    index = generateRandomIndex();
+    colorImg=  addRandomImage(index);
+    
     trEl.addEventListener('click', chooseColor);
     break;
   case 'sense':
@@ -477,87 +481,101 @@ function chooseNumber(event) {
 
 }
 
-let colorsArry=['img/colors/black.jpg','img/colors/blue.jpg','img/colors/green.jpg','img/colors/orange.jpg','img/colors/purple.jpg','img/colors/red.jpg','img/colors/white.jpg','img/colors/yellow.jpg'];
 function chooseColor(event){
+  //console.log(colorImg);
   event.preventDefault();
   //console.log(event);
+  //console.log(colorImg);
   let value = event.target.innerText;
-  let imgEl, imgEl2, tdEl, trEl;
-  divLessonEl.innerHTML = ' ';
-  imgEl = document.createElement('img');
-  divLessonEl.appendChild(imgEl);
-
-  imgEl2 = document.createElement('img');
-  divLessonEl.appendChild(imgEl2);
-  switch (value) {
-  case 'red':
-    imgEl.setAttribute('src', colorsArry[5]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-    break;
-  case 'yellow':
-    imgEl.setAttribute('src', colorsArry[7]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-   // imgEl2.setAttribute('src', numbersImges[0]);
-   // imgEl2.setAttribute('class', 'numsImgDiv');
-
-    break;
-  case 'green':
-    imgEl.setAttribute('src', colorsArry[2]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-  //  imgEl2.setAttribute('src', numbersImges[1]);
-    //imgEl2.setAttribute('class', 'numsImgDiv');
-
-    break;
-  case 'black':
-    imgEl.setAttribute('src', colorsArry[0]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-    //imgEl2.setAttribute('src', numbersImges[2]);
-    //imgEl2.setAttribute('class', 'numsImgDiv');
-
-    break;
-  case 'blue':
-    imgEl.setAttribute('src', colorsArry[1]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-   // imgEl2.setAttribute('src', numbersImges[3]);
-    //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
-    break;
-  case 'purple':
-    imgEl.setAttribute('src', colorsArry[4]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-   // imgEl2.setAttribute('src', numbersImges[5]);
-    //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
-    break;
-  case 'white':
-    imgEl.setAttribute('src', colorsArry[6]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-   // imgEl2.setAttribute('src', numbersImges[6]);
-    //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
-    break;
-    case 'orange':
-    imgEl.setAttribute('src', colorsArry[3]);
-    imgEl.setAttribute('class', 'numsDiv');
-    generateRandomIndex();
-   // imgEl2.setAttribute('src', numbersImges[6]);
-    //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
-    break;
-
-
+  for (let i = 0; i < 15; i++) {
+    if(value === colorImg.elementName )
+    {
+      console.log(index);
+      trEl.cells[index].setAttribute('onClick', `this.style.backgroundColor='${colorsLesson.arrayOfElemnts[index].elementName}'`);
+    }
+    else {
+      break;
+    }
+    index = generateRandomIndex();
+    colorImg = addRandomImage(index);
   }
+  
+  // let imgEl, imgEl2, tdEl, trEl;
+  // divLessonEl.innerHTML = ' ';
+  // imgEl = document.createElement('img');
+  // divLessonEl.appendChild(imgEl);
+
+  // imgEl2 = document.createElement('img');
+  // divLessonEl.appendChild(imgEl2);
+  // switch (value) {
+  // case 'red':
+  //   imgEl.setAttribute('src', colorsArry[5]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //   break;
+  // case 'yellow':
+  //   imgEl.setAttribute('src', colorsArry[7]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //  // imgEl2.setAttribute('src', numbersImges[0]);
+  //  // imgEl2.setAttribute('class', 'numsImgDiv');
+
+  //   break;
+  // case 'green':
+  //   imgEl.setAttribute('src', colorsArry[2]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  // //  imgEl2.setAttribute('src', numbersImges[1]);
+  //   //imgEl2.setAttribute('class', 'numsImgDiv');
+
+  //   break;
+  // case 'black':
+  //   imgEl.setAttribute('src', colorsArry[0]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //   //imgEl2.setAttribute('src', numbersImges[2]);
+  //   //imgEl2.setAttribute('class', 'numsImgDiv');
+
+  //   break;
+  // case 'blue':
+  //   imgEl.setAttribute('src', colorsArry[1]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //  // imgEl2.setAttribute('src', numbersImges[3]);
+  //   //imgEl2.setAttribute('class', 'numsImgDiv');
+
+
+  //   break;
+  // case 'purple':
+  //   imgEl.setAttribute('src', colorsArry[4]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //  // imgEl2.setAttribute('src', numbersImges[5]);
+  //   //imgEl2.setAttribute('class', 'numsImgDiv');
+
+
+  //   break;
+  // case 'white':
+  //   imgEl.setAttribute('src', colorsArry[6]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //  // imgEl2.setAttribute('src', numbersImges[6]);
+  //   //imgEl2.setAttribute('class', 'numsImgDiv');
+
+
+  //   break;
+  //   case 'orange':
+  //   imgEl.setAttribute('src', colorsArry[3]);
+  //   imgEl.setAttribute('class', 'numsDiv');
+  //   generateRandomIndex();
+  //  // imgEl2.setAttribute('src', numbersImges[6]);
+  //   //imgEl2.setAttribute('class', 'numsImgDiv');
+
+
+  //   break;
+
+
+  // }
 
 
 
@@ -566,4 +584,16 @@ function chooseColor(event){
 function generateRandomIndex() {
   let randomIndex = Math.floor(Math.random() * colorsLesson.arrayOfElemnts.length);
   return randomIndex;
+}
+
+function addRandomImage(index){
+    // console.log(index);
+    // console.log(colorsLesson.arrayOfElemnts[index]);
+    
+    divLessonEl.innerHTML = ' ';
+    let colorimgEl = document.createElement('img');
+    divLessonEl.appendChild(colorimgEl);
+    colorimgEl.setAttribute('src',colorsLesson.arrayOfElemnts[index].img);
+    colorimgEl.setAttribute('class','colorimg');
+    return colorsLesson.arrayOfElemnts[index];
 }

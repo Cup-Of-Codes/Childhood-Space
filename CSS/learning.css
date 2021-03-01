@@ -230,3 +230,9 @@
     bottom: -200px;
     
 }
+
+#question {
+    color: brown;
+    padding-top: 30px;
+    text-align: center;
+}
