@@ -3,11 +3,11 @@
 let sectionEL = document.getElementById('lessonChoices');
 let sectionOp = document.getElementById('learnOptions');
 let sectionChoices = document.getElementById('content');
-let tableContentEl = document.getElementById('tableContent')
+let tableContentEl = document.getElementById('tableContent');
 let divLessonEl = document.getElementById('elementLesson');
 
-let imgNum, textNum, imageAdd, textAdd, imgSub, textSub;
-let divAdd, divSub, divNum;
+let imgNum, textNum, imageAdd, imgColor, imgSense, textColor, textSense, textAdd, imgSub, textSub;
+let divAdd, divSub, divNum, divColors, divSense;
 
 const Lesson = function (lessonName, img) {
     this.lessonName = lessonName;
@@ -69,6 +69,34 @@ for (let i = 0; i < 10; i++) {
 let additionLesson = new Lesson('Addition', 'img/addition_lessons.png')
 let substractionLesson = new Lesson('Substraction', 'img/subtraction_lessons.png');
 
+let colorsLesson = new Lesson('Colors', 'img/colors.jpg')
+let color;
+color = new LessonElement('red','img/colors/red.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('yellow','img/colors/yellow.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('orange','img/colors/orange.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('green','img/colors/green.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('blue','img/colors/blue.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('purple','img/colors/purple.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('white','img/colors/white.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+color = new LessonElement('black','img/colors/black.jpg');
+colorsLesson.arrayOfElemnts.push(color);
+
+let sensesLesson = new Lesson('Senses', 'img/senses.jpg');
+
 sectionOp.addEventListener('click', chooseOne);
 
 function chooseOne(event) {
@@ -76,9 +104,10 @@ function chooseOne(event) {
     event.preventDefault();
     let eventValue = event.target.id;
     if (eventValue === 'math' || eventValue === 'mathImg' || eventValue === 'mathP') {
+        sectionEL.innerHTML = " ";
         divNum = document.createElement('div');
         sectionEL.appendChild(divNum);
-        divNum.setAttribute('class', 'lessons')
+        divNum.setAttribute('class', 'mathlessons')
         imgNum = document.createElement('img');
         divNum.appendChild(imgNum);
         imgNum.setAttribute('src', numbersLesson.img)
@@ -88,7 +117,7 @@ function chooseOne(event) {
         textNum.textContent = numbersLesson.lessonName;
         divAdd = document.createElement('div');
         sectionEL.appendChild(divAdd);
-        divAdd.setAttribute('class', 'lessons')
+        divAdd.setAttribute('class', 'mathlessons')
         imageAdd = document.createElement('img');
         divAdd.appendChild(imageAdd);
         console.log(additionLesson.img);
@@ -99,7 +128,7 @@ function chooseOne(event) {
         textAdd.textContent = additionLesson.lessonName;
         divSub = document.createElement('div');
         sectionEL.appendChild(divSub);
-        divSub.setAttribute('class', 'lessons')
+        divSub.setAttribute('class', 'mathlessons')
         imgSub = document.createElement('img');
         divSub.appendChild(imgSub);
         imgSub.setAttribute('src', substractionLesson.img);
@@ -109,9 +138,30 @@ function chooseOne(event) {
         textSub.textContent = substractionLesson.lessonName;
 
         //imgNum.setAttribute('alt',Numbers);
-        sectionOp.removeEventListener('click', chooseOne);
+        // sectionOp.removeEventListener('click', chooseOne);
     }
     else if (eventValue === 'english' || eventValue === 'englishImg' || eventValue === 'englishP') {
+        sectionEL.innerHTML = " ";
+        divColors = document.createElement('div');
+        sectionEL.appendChild(divColors);
+        divColors.setAttribute('class', 'elessons')
+        imgColor = document.createElement('img');
+        divColors.appendChild(imgColor);
+        imgColor.setAttribute('src', colorsLesson.img)
+        imgColor.setAttribute('id', 'color');
+        textColor = document.createElement('h3');
+        divColors.appendChild(textColor);
+        textColor.textContent = colorsLesson.lessonName;
+        divSense = document.createElement('div');
+        sectionEL.appendChild(divSense);
+        divSense.setAttribute('class', 'elessons')
+        imgSense = document.createElement('img');
+        divSense.appendChild(imgSense);
+        imgSense.setAttribute('src', sensesLesson.img)
+        imgSense.setAttribute('id', 'sense');
+        textSense = document.createElement('h3');
+        divSense.appendChild(textSense);
+        textSense.textContent = sensesLesson.lessonName;
     }
 
 
@@ -262,14 +312,14 @@ function chooseLesson(event) {
                         let timgEl = document.createElement('img');
                         tdEl.appendChild(timgEl);
                         timgEl.setAttribute('src', 'img/subLesson/subtraction01-03.gif');
-                        timgEl.setAttribute('class' , 'imgSub')
+                        timgEl.setAttribute('class', 'imgSub')
                         tdEl = document.createElement('td');
                         trEl.appendChild(tdEl);
                         timgEl = document.createElement('img');
                         tdEl.appendChild(timgEl);
                         timgEl.setAttribute('src', 'img/subLesson/subtraction01-04.gif');
-                        timgEl.setAttribute('class' , 'imgSub')
-                        timgEl.setAttribute('id','twotriangle');
+                        timgEl.setAttribute('class', 'imgSub')
+                        timgEl.setAttribute('id', 'twotriangle');
 
                         break;
                     case 6:
@@ -286,21 +336,66 @@ function chooseLesson(event) {
                         break;
                 }
             }
-
             break;
+        case 'color':
+            tableContentEl.innerHTML = " ";
+            divLessonEl.innerHTML = " ";
+            trEl = document.createElement('tr');
+            tableContentEl.appendChild(trEl);
+            for (let i = 0; i < colorsLesson.arrayOfElemnts.length; i++) {
+                tdEl = document.createElement('td');
+                trEl.appendChild(tdEl);
+                tdEl.textContent = colorsLesson.arrayOfElemnts[i].elementName;
+                tdEl.setAttribute('class', 'numsNav')
+                tdEl.setAttribute('id',  'colorChoice')
+            }
 
+            let index = generateRandomIndex();
+            console.log(index);
+            console.log(colorsLesson.arrayOfElemnts[index]);
+            let colorimgEl = document.createElement('img');
+            divLessonEl.appendChild(colorimgEl);
+            colorimgEl.setAttribute('src',colorsLesson.arrayOfElemnts[index].img);
+            colorimgEl.setAttribute('class','colorimg');
+
+            trEl.addEventListener('click', chooseColor);
+            break;
+        case 'sense':
+            tableContentEl.innerHTML = " ";
+            divLessonEl.innerHTML = " ";
+            let imgSense = document.createElement('img');
+            divLessonEl.appendChild(imgSense);
+            imgSense.setAttribute('src', 'img/senses.jpg');
+            imgSense.setAttribute('id', 'senses');
+            break;
     }
 }
 
+
+
+let numbersImges = ['img/numbersPic/1-pencil.png',
+    'img/numbersPic/2-carrots.png',
+    'img/numbersPic/3-apples.png',
+    'img/numbersPic/4-balls.jpg',
+    'img/numbersPic/5-babnana.jpg',
+    'img/numbersPic/6-apples.png',
+    'img/numbersPic/7-ballons.jpg',
+    'img/numbersPic/8-strawberry.png',
+    'img/numbersPic/9-crrots.jpg'
+]
+
 function chooseNumber(event) {
     event.preventDefault();
-    console.log(event);
+    //console.log(event);
     let value = event.target.innerText;
     //console.log(value);
-    let imgEl, tdEl, trEl;
+    let imgEl, imgEl2, tdEl, trEl;
     divLessonEl.innerHTML = " ";
     imgEl = document.createElement('img');
     divLessonEl.appendChild(imgEl);
+
+    imgEl2 = document.createElement('img');
+    divLessonEl.appendChild(imgEl2);
     switch (value) {
         case 'Zero':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[0].img);
@@ -309,42 +404,83 @@ function chooseNumber(event) {
         case 'One':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[1].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[0]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
             break;
         case 'Two':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[2].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[1]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
             break;
         case 'Three':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[3].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[2]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
             break;
         case 'Four':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[4].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[3]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
+
             break;
         case 'Five':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[5].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[4]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
+
             break;
         case 'Six':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[6].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[5]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
+
             break;
         case 'Seven':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[7].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[6]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
+
             break;
         case 'Eight':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[8].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[7]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
             break;
         case 'Nine':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[9].img);
             imgEl.setAttribute('class', 'numsDiv');
+            imgEl2.setAttribute('src', numbersImges[9]);
+            imgEl2.setAttribute('class', 'numsImgDiv');
+
+
             break;
     }
 
 }
 
+function chooseColor(event){
+    event.preventDefault();
+    //console.log(event);
+    let value = event.target.innerText;
 
+}
 
+function generateRandomIndex() {
+    let randomIndex = Math.floor(Math.random() * colorsLesson.arrayOfElemnts.length);
+    return randomIndex;
+}
