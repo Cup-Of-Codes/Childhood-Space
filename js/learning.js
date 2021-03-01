@@ -4,6 +4,7 @@ let sectionEL = document.getElementById('lessonChoices');
 let sectionOp = document.getElementById('learnOptions');
 let sectionChoices = document.getElementById('content');
 let tableContentEl = document.getElementById('tableContent')
+let divLessonEl = document.getElementById('elementLesson');
 
 let imgNum, textNum, imageAdd, textAdd, imgSub, textSub;
 let divAdd, divSub, divNum;
@@ -111,7 +112,7 @@ function chooseOne(event) {
         sectionOp.removeEventListener('click', chooseOne);
     }
     else if (eventValue === 'english' || eventValue === 'englishImg' || eventValue === 'englishP') {
-    }       
+    }
 
 
 }
@@ -122,19 +123,15 @@ function chooseLesson(event) {
     event.preventDefault();
     let value = event.target.id;
     console.log(event);
-    
+
     let trEl, tdEl;
     let h3, img;
     let rows;
     switch (value) {
         case 'numbers':
-            rows =tableContentEl.getElementsByTagName('tr').length;
-
-            for (let i = 0; i < rows; i++) {
-                tableContentEl.deleteRow(i);
-                
-            }
-             //console.log(tableContentEl);
+            tableContentEl.innerHTML = " ";
+            divLessonEl.innerHTML = " ";
+            //console.log(tableContentEl);
             trEl = document.createElement('tr');
             tableContentEl.appendChild(trEl);
             for (let i = 0; i < numbersLesson.arrayOfElemnts.length; i++) {
@@ -148,12 +145,9 @@ function chooseLesson(event) {
             break;
 
         case 'add':
-            rows =tableContentEl.getElementsByTagName('tr').length;
+            tableContentEl.innerHTML = " ";
+            divLessonEl.innerHTML = " ";
 
-            for (let i = 0; i < rows; i++) {
-                tableContentEl.deleteRow(i);
-                
-            }
             //console.log(tableContentEl);
             for (let i = 0; i < 9; i++) {
                 trEl = document.createElement('tr');
@@ -205,7 +199,6 @@ function chooseLesson(event) {
                         let finalImgEl = document.createElement('img');
                         tdEl.appendChild(finalImgEl);
                         finalImgEl.setAttribute('src', 'img/addition01-03 (1).gif');
-                        finalImgEl.setAttribute('class', 'imgCentered');
                         break;
                     case 6:
                         tdEl = document.createElement('td');
@@ -218,101 +211,140 @@ function chooseLesson(event) {
                         let resultImgEl = document.createElement('img');
                         tdEl.appendChild(resultImgEl);
                         resultImgEl.setAttribute('src', 'img/addition01-04.gif');
-                        resultImgEl.setAttribute('class', 'imgCentered');
                         break;
                 }
             }
             break;
         case 'sub':
-            rows =tableContentEl.getElementsByTagName('tr').length;
+            tableContentEl.innerHTML = " ";
+            divLessonEl.innerHTML = " ";
 
-            for (let i = 0; i < rows; i++) {
-                tableContentEl.deleteRow(i);
-                
+            for (let i = 0; i < 9; i++) {
+                trEl = document.createElement('tr');
+                tableContentEl.appendChild(trEl);
+                switch (i) {
+                    case 0:
+                        //console.log(tableContentEl);
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        tdEl.textContent = 'This is the very beginning of understanding how subtraction works. Let\'s look at this set: ';
+                        tdEl.setAttribute('id', 'between');
+                        break;
+                    case 1:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        let imgEl = document.createElement('img');
+                        tdEl.appendChild(imgEl);
+                        imgEl.setAttribute('src', 'img/subLesson/subtraction01-01.gif');
+
+                        break;
+                    case 2:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        tdEl.textContent = 'Count how many triangles are in this set...  There are 5!';
+                        // tdEl.setAttribute('class', 'imgCentered');
+                        break;
+                    case 3:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        tdEl.textContent = 'Now, take two triangles away...';
+                        break;
+                    case 4:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        let pimgEl = document.createElement('img');
+                        tdEl.appendChild(pimgEl);
+                        pimgEl.setAttribute('src', 'img/subLesson/subtraction01-02.gif');
+                        break;
+                    case 5:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        let timgEl = document.createElement('img');
+                        tdEl.appendChild(timgEl);
+                        timgEl.setAttribute('src', 'img/subLesson/subtraction01-03.gif');
+                        timgEl.setAttribute('class' , 'imgSub')
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        timgEl = document.createElement('img');
+                        tdEl.appendChild(timgEl);
+                        timgEl.setAttribute('src', 'img/subLesson/subtraction01-04.gif');
+                        timgEl.setAttribute('class' , 'imgSub')
+                        timgEl.setAttribute('id','twotriangle');
+
+                        break;
+                    case 6:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        tdEl.textContent = 'Count how many triangles are left in the set...  There are 3 left!	';
+                        break;
+                    case 7:
+                        tdEl = document.createElement('td');
+                        trEl.appendChild(tdEl);
+                        let resultImgEl = document.createElement('img');
+                        tdEl.appendChild(resultImgEl);
+                        resultImgEl.setAttribute('src', 'img/subLesson/subtraction01-05.gif');
+                        break;
+                }
             }
+
             break;
 
     }
 }
-
 
 function chooseNumber(event) {
     event.preventDefault();
     console.log(event);
     let value = event.target.innerText;
     //console.log(value);
-    let imgEl ,tdEl,trEl;
+    let imgEl, tdEl, trEl;
+    divLessonEl.innerHTML = " ";
     imgEl = document.createElement('img');
-    sectionChoices.appendChild(imgEl);
+    divLessonEl.appendChild(imgEl);
     switch (value) {
         case 'Zero':
             imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[0].img);
-            imgEl.setAttribute('class','numsDiv');
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'One':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/1.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[1].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Two':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/2.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[2].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Three':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/3.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[3].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Four':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/4.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[4].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Five':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/5.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[5].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Six':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/6.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[6].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Seven':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/7.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[7].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Eight':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/8.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[8].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
         case 'Nine':
-            tdEl = document.createElement('td');
-            trEl.appendChild(tdEl);
-            imgEl = document.createElement('img');
-            tdEl.appendChild(imgEl);
-            imgEl.setAttribute('src', 'img/9.png');
+            imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[9].img);
+            imgEl.setAttribute('class', 'numsDiv');
             break;
     }
 
 }
+
+
 
