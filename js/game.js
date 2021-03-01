@@ -3,6 +3,15 @@
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
+let buttonMemory=document.getElementById('memoryGB')
+buttonMemory.addEventListener('click', showingMemGam)
+function showingMemGam(event){
+    event.preventDefault();
+    let divGame1=document.getElementById('insertHere')
+    let divInsertGmae=document.getElementById('memoryInsert')
+    divGame1.appendChild(divInsertGmae)
+
+
 document.querySelector('.start-button span').onclick=function(){
     let yourName=prompt('whats your name');
     //console.log(yourName);
@@ -238,7 +247,7 @@ function checkImage2(first,second){
     }
 }
 
-
+}
 
 
 

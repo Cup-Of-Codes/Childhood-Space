@@ -412,12 +412,27 @@ footer{
     position: absolute;
     left: 1050px;
     top:660px;
-   
    height: 100px;
    width: 100px;
+   
+   
+   
+   font-size: larger;
+   background: #2db34a;
+   transition-property: background;
+   transition-duration: 1s;
+   transition-timing-function: linear;
+   
+   
    font-family: cursive;
    font-weight: bolder;
-   font-size: larger;
+
+
+
+
+}
+.secondGame button:hover{
+    background: #ff7b29;
 }
 /* .shapgame{
  position: absolute;
