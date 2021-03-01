@@ -147,7 +147,7 @@
     position: relative;
     top: 50vh;
     left: 10vw;
-    height: 1000px;
+    height: 700px;
     width: 80%;
     border: tomato solid 2px;
 }
@@ -180,6 +180,7 @@
     font-size: xx-large;
     background-color: paleturquoise;
     transition: all .4s ease-in-out;
+    cursor: pointer;
 }
 
 #tableContent tr .numsNav:hover{
@@ -196,9 +197,10 @@
 }
 
 .numsDiv {
-position: absolute;
-right : 100px;
-bottom: -400px;
+    position: absolute;
+    right: 0px;
+    bottom: -170px;
+    width: 291px;
 }
 
 .imgSub {
@@ -222,5 +224,9 @@ bottom: -400px;
 }
 
 .colorimg {
+    width: 320px;
+    position: absolute;
+    right: 0px;
+    bottom: -200px;
     
 }
