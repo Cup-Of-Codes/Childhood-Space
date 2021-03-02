@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
 }
-body{
+/* body{
    background-image: url("https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif");
    background-repeat: no-repeat;
    background-size: cover;
     font-family: cursive;
-}
+} */
 
 header nav ul img{
   
@@ -139,14 +139,15 @@ header{
 }/* level 1 ///////////////////////////////////////////////////////////////////////////////////////*/
 .container-game{
   
-    display: flex;
+     display: flex;
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
     position: relative;
     top: 240px;
     display: none;
-    top: 808px;
+    top: 808px; 
+    
 }
 .container-game .game-block{
     height: 200px;
@@ -496,11 +497,18 @@ border-radius: 15px;
 }
 
 #btn2{
-    
+  
     margin-top: 839px;
     width: 200px;
     height: 41px;
     display: none;
+/*   
+    width: 200px;
+    height: 41px;
+    display: none;
+    position: absolute;
+    top: 106px; */
+   
 }
 
 #btn3{
@@ -511,7 +519,14 @@ border-radius: 15px;
     display: none;
 
 }
+/* #btn1{
+  
+    margin-top: 839px;
+    width: 200px;
+    height: 41px;
+    display: none;
 
+} */
 
 #shapePic {
     position: absolute;
@@ -525,3 +540,13 @@ border-radius: 15px;
 
 
 
+#btn1{
+   
+    margin-top: 839px;
+    width: 200px;
+    height: 41px;
+    display: none;
+
+    
+
+}
