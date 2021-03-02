@@ -110,16 +110,16 @@ main p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main div{
+/* main div{
     position:absolute ;
     top: 300px;
     left: 700px;
-}
-.cont{
+} */
+/* .cont{
     position:absolute;
-    /* left: 30px; */
+     left: 30px;
     margin-left: 40px;
-}
+}  */
 .b1{
     display: inline-block;
     padding: 15px 25px;
@@ -135,8 +135,8 @@ main div{
     box-shadow: 0 9px #999;
     position: relative;
     
-    right: 520px;
-    top:370px;
+    right: -70px;
+    top: 19px;
 
     background-color:rgb(48, 194, 48);
     border: 1px solid black;
@@ -167,8 +167,8 @@ main div{
     border-radius: 15px;
     box-shadow: 0 9px #999;
     position: relative;
-    top:370px;
-    left: 115px;
+    top: 19px;
+    left: 80px;
 
 
     background-color:rgb(48, 194, 48);
@@ -201,7 +201,7 @@ main div{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-.game {
+/* .game {
     position:absolute;
     right: 500px;
     border: 5px solid #555;
@@ -226,7 +226,7 @@ main div{
 .learn:hover{
     transform: scale(1.3);
     transition: all 0.5s;
-}
+} */
 input{
     padding: 12px 20px;
   margin: 8px 0;
@@ -249,7 +249,8 @@ label{
 
 #form{
     position: absolute;
-    right: 130px;
+    right: 595px;
+    
     font-size: x-large;
     font-family: cursive;
     background-color: lightcoral;
@@ -257,9 +258,9 @@ label{
     border-style:groove;
     border: 10px;
     border: 3px solid #555;
-    width: 150%;
+    width: 20%;
     height: 180px;
-    margin-top: 60px;
+    top: 600px;
 }
 .cont #saveName{
     display: inline-block;
@@ -331,6 +332,7 @@ footer{
 }
 
   .popup {
+   
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -341,6 +343,7 @@ footer{
   }
   /* The actual popup */
   .popup .popuptext {
+    
     visibility: hidden;
     width: 285px;
     background-color: #c74e4e40;
@@ -353,20 +356,21 @@ footer{
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
+    bottom: -64vh;
+    left: 23.3vw;
     margin-left: -190px;
     height: 100px;
-    /* border: 3px solid rgb(104, 102, 102); */
-    border:3px solid black;
+     border: 3px solid rgb(104, 102, 102);
+    border:3px solid black; 
    
   }
   /* Popup arrow */
   .popup .popuptext::after {
+
     content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
+    bottom: -110vh;
+    left: 23.3vw;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
@@ -389,3 +393,45 @@ footer{
     to {opacity:1 ;}
   }
   
+  .optionHome {
+    position: relative;
+    top: 37vh;
+    left :23vw;
+    display: inline-block;
+    background-color: rgb(249, 255, 172);
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    margin-right: 29vw;
+    border: rgb(2, 107, 25) 5px solid;
+    border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition: all .4s ease-in-out;
+  margin-left: -106px;
+}
+
+
+.optionHome:hover{
+    background-color: #aaf5ff;
+    transform: scale(1.1);
+}
+
+.optionHome img {
+    
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+    width: 90%;
+    height: 60%;
+    border-radius: 50px;
+    
+}
+
+#learnOptions
+{
+    position :relative;
+    left:290vw;
+    bottom:30vh;
+}
