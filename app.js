@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 'use strict';
-=======
-
-`use strict`
->>>>>>> origin
 let user;
 function save(){
     let saveName= JSON.stringify(user);
@@ -35,13 +30,4 @@ function myFunction(){
     popup.classList.toggle('show');
     
 }
-var x = document.getElementById("myAudio");
-function playAudio() { 
-    x.play(); 
-    console.log("hghj")
 
-<<<<<<< HEAD
-  } 
-=======
-/////////////////////////////////////////////////////////////////////
->>>>>>> origin
