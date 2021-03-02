@@ -493,9 +493,6 @@ function chooseColor(event){
       console.log(index);
       trEl.cells[index].setAttribute('onClick', `this.style.backgroundColor='${colorsLesson.arrayOfElemnts[index].elementName}'`);
     }
-    else {
-      break;
-    }
     index = generateRandomIndex();
     colorImg = addRandomImage(index);
   }
