@@ -513,7 +513,15 @@ border-radius: 15px;
 }
 
 
+#shapePic {
+    position: absolute;
+    top: 60vh;
+    left: 34vw;
+}
 
+.shape {
+    margin: 10px;
+}
 
 
 
