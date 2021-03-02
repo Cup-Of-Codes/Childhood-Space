@@ -1,0 +1,179 @@
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+#learnOptions
+{
+    margin: 0 auto;
+}
+.option {
+    position: relative;
+    top: 37vh;
+    left :23vw;
+    display: inline-block;
+    background-color: rgb(249, 255, 172);
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    margin-right: 15vw;
+    border: rgb(2, 107, 25) 5px solid;
+    border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition: all .4s ease-in-out;
+
+}
+
+.option:hover{
+    background-color: #aaf5ff;
+    transform: scale(1.1);
+}
+
+.option img {
+    
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+    width: 90%;
+    height: 60%;
+    border-radius: 50px;
+    
+}
+
+
+
+#mathP {
+    text-align: scenter;
+    color: maroon;
+    display: inline-block;
+    position: relative;
+    left: 2vw;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#englishP {
+    text-align: center;
+    color: olivedrab;
+    display: inline-block;
+    position: relative;
+    left: 5vw;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#lessonChoices {
+    display: inline-block;
+    position: relative;
+    top : 45vh;
+    left: 5vw;
+    width: 90%;
+    height: 200%;
+    padding-bottom: 30px;
+      
+
+}
+
+/* #numbers {
+    width: 102px;
+    height: 102px;
+} */
+.lessons {
+
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 5vw;
+    top : 5vh;
+    /* right: 10vw; */
+    width: 30%;
+    height: 50%;
+    
+}
+.lessons:active{
+    transform: scale(0.9);
+}
+.lessons img {
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+}
+.lessons h3 {
+    font-size: 28px;
+    color: darkorange;
+    font-weight: bold;
+}
+
+.lessons img:hover
+{
+    opacity: 70%;
+}
+
+#content {
+    position: relative;
+    top: 50vh;
+    left: 10vw;
+    height: 1000px;
+    width: 80%;
+    border: tomato solid 2px;
+}
+
+#yourLesson{
+    width: 100%;
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+}
+
+#tableContent tr td 
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+#tableContent tr td img {
+   margin-bottom: -40px;
+   margin-top: -40px;
+}
+
+
+
+#tableContent tr .numsNav {
+    padding:17px;
+    font-size: xx-large;
+    background-color: paleturquoise;
+    transition: all .4s ease-in-out;
+}
+
+#tableContent tr .numsNav:hover{
+    background-color: rgb(2, 145, 228);
+    border-radius: 25px;
+    color: rgb(244, 202, 255);
+    transform: scew(1.1);
+    
+}
+
+#tableContent tr .numsNav:active {
+    transform: scale(0.9);
+
+}
+
+.numsDiv {
+position: absolute;
+right : 100px;
+bottom: -400px;
+}
+
+.imgSub {
+    padding-top: 45px;
+    margin-left: -25vw;
+}
+/* 
+#twotriangle {
+    padding-top: 10px;
+    margin-top: -20px;
+} */
