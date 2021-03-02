@@ -357,12 +357,5 @@ function addRandomImage() {
             questionEl.textContent = 'Which following is the shape of ' + shapesName[index] + ' :';
         }
     }
-}
 
-
-
-
-
-
-
-
+}}}
