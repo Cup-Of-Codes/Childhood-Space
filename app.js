@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 'use strict';
+=======
+
+`use strict`
+>>>>>>> origin
 let user;
 function save(){
     let saveName= JSON.stringify(user);
@@ -35,4 +40,8 @@ function playAudio() {
     x.play(); 
     console.log("hghj")
 
+<<<<<<< HEAD
   } 
+=======
+/////////////////////////////////////////////////////////////////////
+>>>>>>> origin
