@@ -20,6 +20,7 @@ function secondLevel(){
     document.getElementById('div3').remove();
     document.getElementById('div4').style.display='flex';
     document.getElementById('btn3').style.display='block';
+}
     
 
   function thirdLevel(){
@@ -30,13 +31,11 @@ function secondLevel(){
 
 
 function finish(){
- 
-    
     document.getElementById('div5').remove();
 }
-document.querySelector('.start-button span').onclick=function(){
-    // let yourName=prompt('whats your name');
-    //console.log(yourName);
+// document.querySelector('.start-button span').onclick=function(){
+//     // let yourName=prompt('whats your name');
+//     //console.log(yourName);
 
 
 document.querySelector('.start-button span').onclick = function () {
@@ -357,5 +356,6 @@ function addRandomImage() {
             questionEl.textContent = 'Which following is the shape of ' + shapesName[index] + ' :';
         }
     }
+}
 
-}}}
+
