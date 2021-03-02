@@ -2,14 +2,23 @@
     font-family: 'Indie Flower', cursive;
 }
 
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKBBOc-dAM2CPgFPn28rUhzpKypBb2H9YUw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+     font-family: cursive;
+     background-attachment: fixed;
+ }
 #learnOptions
 {
     margin: 0 auto;
 }
 .option {
     position: relative;
-    top: 37vh;
-    left :23vw;
+    top: 450px;
+    right: 3645px;
+
     display: inline-block;
     background-color: rgb(249, 255, 172);
     margin: 0 auto;
@@ -228,8 +237,8 @@ border-radius: 20px;
 
 .numsDiv {
     position: absolute;
-    right: 0px;
-    bottom: -170px;
+    right: 489px;
+    top: 172px;
     width: 291px;
     color:black ;
 }
@@ -242,23 +251,24 @@ border-radius: 20px;
 .numsImgDiv {
     position: absolute;
     border-radius: 40px;
-    bottom: -400px;
+    bottom: 11px;
+    left: 667px;
     width: 300px;
     height: 300px;
 }
 
 #senses {
     position: absolute;
-    right: -165px;
-    top: -230px;
+    right: 234px;
+    top: 36px;
 
 }
 
 .colorimg {
     width: 320px;
     position: absolute;
-    right: 0px;
-    bottom: -200px;
+    right: 447px;
+    bottom: 190px;
     border-radius: 40px;
     
 }
