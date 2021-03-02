@@ -1,12 +1,47 @@
-// var video = document.getElementById("myVideo");
-// var btn = document.getElementById("myBtn");
+<<<<<<< HEAD
+'use strict';
+=======
 
-// function myFunction() {
-//   if (video.paused) {
-//     video.play();
-//     btn.innerHTML = "Pause";
-//   } else {
-//     video.pause();
-//     btn.innerHTML = "Play";
-//   }
-// }
+`use strict`
+>>>>>>> origin
+let user;
+function save(){
+    let saveName= JSON.stringify(user);
+    localStorage.setItem('userName',saveName);
+}
+let form =document.getElementById('form');
+form.addEventListener('submit',showResult);
+
+
+function showResult(event){
+    console.log(event);
+    event.preventDefault();
+   
+    user = event.target.name.value;
+    console.log(showResult);
+
+    save();
+    
+    let devContent = document.getElementById('myPopup');
+    devContent.textContent ='Welcome: ' + user;
+    console.log(devContent);
+    myFunction();
+    
+}
+
+function myFunction(){
+    
+    let popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+    
+}
+var x = document.getElementById("myAudio");
+function playAudio() { 
+    x.play(); 
+    console.log("hghj")
+
+<<<<<<< HEAD
+  } 
+=======
+/////////////////////////////////////////////////////////////////////
+>>>>>>> origin

@@ -544,6 +544,12 @@ border-radius: 15px;
     transition-timing-function: linear;
     
 
+#shapePic {
+    position: absolute;
+    top: 60vh;
+    left: 34vw;
+}
+
 
 }
 #btn2:hover{
@@ -551,6 +557,10 @@ border-radius: 15px;
 }
 #btn3:hover{
     background: #ff7b29;
+=======
+.shape {
+    margin: 10px;
+
 }
 
 #button{

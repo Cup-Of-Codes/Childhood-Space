@@ -36,14 +36,14 @@
             </a>
         </li>
         <li>
-        <a href="">
+        <a href="about.html">
                <img src="img/contacts.png" alt="">
                <p>About us</p>
             </a>
         </li>
         </ul>
     </nav>
-    <div class="tab"></div>
+    
     </header>
     
 </header>
@@ -51,17 +51,19 @@
 <main>
      
     <div class="firstGame">
+
         <img class="memGame" src="https://files.slack.com/files-pri/TNGRRLUMA-F01PQ4AFSUA/memorygame.jpg">
         <button onclick="playGame()" > Start Memory Game</button>
+
+        <img class="memGame" src="img/memorygame.jpg">
+        <button onclick="playGame()"> Start Memory Game</button>
+
     </div>
     <div class="secondGame">
-        <img class="shapgame" src="https://files.slack.com/files-pri/TNGRRLUMA-F01Q2N87X97/shapes.jpg" alt="">
-    <button> Start Shapes Game</button>
+        <img class="shapgame" src="img/shapes.jpg" alt="">
+    <button onclick="playShapeGame()"> Start Shapes Game</button>
     </div>
        
- 
-
-
 
 <div id="level1">
 
@@ -257,10 +259,15 @@
              </div>
            
         </div>
-    
         <button onclick="finish()"id="button">Finish</button>
 
         
+
+        <!-- the second game -->
+        <section id="shapesGame">
+            <div id = "shapePic"></div>
+        </section>
+
     </main>
     <footer>
         <div class="t1"></div>
