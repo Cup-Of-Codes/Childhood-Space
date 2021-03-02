@@ -493,15 +493,16 @@ function chooseColor(event){
       console.log(index);
       trEl.cells[index].setAttribute('onClick', `this.style.backgroundColor='${colorsLesson.arrayOfElemnts[index].elementName}'`);
     }
+    else {
+      break;
+    }
     index = generateRandomIndex();
     colorImg = addRandomImage(index);
   }
-
   // let imgEl, imgEl2, tdEl, trEl;
   // divLessonEl.innerHTML = ' ';
   // imgEl = document.createElement('img');
   // divLessonEl.appendChild(imgEl);
-
   // imgEl2 = document.createElement('img');
   // divLessonEl.appendChild(imgEl2);
   // switch (value) {
@@ -516,7 +517,6 @@ function chooseColor(event){
   //   generateRandomIndex();
   //  // imgEl2.setAttribute('src', numbersImges[0]);
   //  // imgEl2.setAttribute('class', 'numsImgDiv');
-
   //   break;
   // case 'green':
   //   imgEl.setAttribute('src', colorsArry[2]);
@@ -524,7 +524,6 @@ function chooseColor(event){
   //   generateRandomIndex();
   // //  imgEl2.setAttribute('src', numbersImges[1]);
   //   //imgEl2.setAttribute('class', 'numsImgDiv');
-
   //   break;
   // case 'black':
   //   imgEl.setAttribute('src', colorsArry[0]);
@@ -532,7 +531,6 @@ function chooseColor(event){
   //   generateRandomIndex();
   //   //imgEl2.setAttribute('src', numbersImges[2]);
   //   //imgEl2.setAttribute('class', 'numsImgDiv');
-
   //   break;
   // case 'blue':
   //   imgEl.setAttribute('src', colorsArry[1]);
@@ -540,8 +538,6 @@ function chooseColor(event){
   //   generateRandomIndex();
   //  // imgEl2.setAttribute('src', numbersImges[3]);
   //   //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
   //   break;
   // case 'purple':
   //   imgEl.setAttribute('src', colorsArry[4]);
@@ -549,8 +545,6 @@ function chooseColor(event){
   //   generateRandomIndex();
   //  // imgEl2.setAttribute('src', numbersImges[5]);
   //   //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
   //   break;
   // case 'white':
   //   imgEl.setAttribute('src', colorsArry[6]);
@@ -558,8 +552,6 @@ function chooseColor(event){
   //   generateRandomIndex();
   //  // imgEl2.setAttribute('src', numbersImges[6]);
   //   //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
   //   break;
   //   case 'orange':
   //   imgEl.setAttribute('src', colorsArry[3]);
@@ -567,26 +559,16 @@ function chooseColor(event){
   //   generateRandomIndex();
   //  // imgEl2.setAttribute('src', numbersImges[6]);
   //   //imgEl2.setAttribute('class', 'numsImgDiv');
-
-
   //   break;
-
-
   // }
-
-
-
 }
-
 function generateRandomIndex() {
   let randomIndex = Math.floor(Math.random() * colorsLesson.arrayOfElemnts.length);
   return randomIndex;
 }
-
 function addRandomImage(index){
     // console.log(index);
     // console.log(colorsLesson.arrayOfElemnts[index]);
-
     divLessonEl.innerHTML = ' ';
     let colorimgEl = document.createElement('img');
     divLessonEl.appendChild(colorimgEl);

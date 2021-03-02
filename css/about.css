@@ -1,7 +1,7 @@
 body{
     
-    /* background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif); */
-    /* background-image: linear-gradient(to right, rgb(236, 127, 127) , rgb(236, 236, 22)); */
+ background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif); 
+     background-image: linear-gradient(to right, rgb(236, 127, 127) , rgb(236, 236, 22)); 
     background-color: #ccc;
     box-sizing: border-box;
     margin: 0px;

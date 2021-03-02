@@ -1,5 +1,5 @@
-body{
-     background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif);
+ /* body{
+     background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif); 
      background-color: #ddd; 
     box-sizing: border-box;
     margin: 0px;
@@ -8,7 +8,15 @@ body{
     background-size: cover;
     
     
-    }
+    } */
+ 
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKBBOc-dAM2CPgFPn28rUhzpKypBb2H9YUw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+     font-family: cursive;
+     background-attachment: fixed;
+ }
 header nav ul img{
     width:70px;
     height: 70px;
@@ -76,7 +84,7 @@ header{
 
 }  
 
-#myVideo {
+/* #myVideo {
    
   object-fit: cover;
   width: 100%;
@@ -86,7 +94,7 @@ header{
   right: 0;
  
 
-}
+} */
 
 
 

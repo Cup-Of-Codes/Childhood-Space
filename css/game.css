@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
 }
+
 body{
-   background-image: url("");
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKBBOc-dAM2CPgFPn28rUhzpKypBb2H9YUw&usqp=CAU);
    background-repeat: no-repeat;
    background-size: cover;
     font-family: cursive;
@@ -140,14 +141,15 @@ header{
 }/* level 1 ///////////////////////////////////////////////////////////////////////////////////////*/
 .container-game{
   
-    display: flex;
+     display: flex;
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
     position: relative;
     top: 240px;
     display: none;
-    top: 808px;
+    top: 808px; 
+    
 }
 .container-game .game-block{
     height: 200px;
@@ -363,7 +365,7 @@ border-radius: 20px;
     transform: rotateY(180deg);
 }
 
-footer{
+/* footer{
     background-color:#ccc;
     position: relative;
     top:900px;
@@ -382,6 +384,10 @@ footer{
 .t1{
     border: 4px solid black;
 }
+ */
+
+
+
 
 
 
@@ -507,12 +513,14 @@ border-radius: 15px;
 }
 
 #btn2{
+
     width: 200px;
     position: absolute;
     height: 41px;
     top: 830px;
     left: 1071px;
     display: none;
+
     
     font-size: larger;
     background: #2db34a;
@@ -526,6 +534,7 @@ border-radius: 15px;
     width: 200px;
     height: 41px;
     display: none; */
+
 }
 
 #btn3{
@@ -536,33 +545,33 @@ border-radius: 15px;
     top: 830px;
     left: 1071px;
     display: none;
+
     border-radius: 15px;
     font-size: larger;
     background: #2db34a;
     transition-property: background;
     transition-duration: 1s;
     transition-timing-function: linear;
-    
 
-#shapePic {
+}
+#shapesGame{
     position: absolute;
     top: 60vh;
     left: 34vw;
 }
 
 
-}
+
 #btn2:hover{
     background: #ff7b29;
 }
 #btn3:hover{
     background: #ff7b29;
-=======
-.shape {
+/* .shape {
     margin: 10px;
 
+} */
 }
-
 #button{
     display:block;
     position: absolute;
@@ -583,3 +592,35 @@ border-radius: 15px;
 }
 
 
+#btn1{
+   
+    margin-top: 839px;
+    width: 200px;
+    height: 41px;
+    display: none;
+
+    
+
+}
+footer{
+    background-color:  rgb(171, 223, 230);
+    position: relative;
+    top: 1021px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 15px;
+    
+} 
+.soc li{
+    display: inline-block;
+    margin: 20px;
+    
+
+}
+.soc img{
+    width:70% ;
+}
+
+.t1{
+    border: 4px solid black;
+}
