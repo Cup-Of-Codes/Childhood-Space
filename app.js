@@ -1,8 +1,4 @@
-
-// function UserName(name){
-//     this .name=name;
-  
-// }
+'use strict';
 let user;
 function save(){
     let saveName= JSON.stringify(user);
@@ -29,8 +25,14 @@ function showResult(event){
 }
 
 function myFunction(){
+    
     let popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
     
 }
+var x = document.getElementById("myAudio");
+function playAudio() { 
+    x.play(); 
+    console.log("hghj")
 
+  } 

@@ -5,30 +5,44 @@
 /* eslint-disable indent */
 // let buttonMemory=document.getElementById('memoryGB')
 // buttonMemory.addEventListener('click', showingMemGam)
-function playGame() {
-    divShape.innerHTML = ' ';
-    // document.getElementById('div1').style.display = 'flex';
-    // document.getElementById('div2').style.display = 'flex';
-    document.getElementById('div3').style.display = 'flex';
-    document.getElementById('btn2').style.display = 'block';
+
+function playGame(){
+    // document.getElementById('div1').style.display='flex';
+    document.getElementById('div2').style.display='flex';
+    document.getElementById('div3').style.display='flex';
+    document.getElementById('btn2').style.display='block';
+
 }
 
 
-function secondLevel() {
+function secondLevel(){
     document.getElementById('btn2').remove();
     document.getElementById('div1').remove();
     // document.getElementById('div2').remove();
     document.getElementById('div3').remove();
-    document.getElementById('div4').style.display = 'flex';
-    document.getElementById('btn3').style.display = 'block';
+    document.getElementById('div4').style.display='flex';
+    document.getElementById('btn3').style.display='block';
+    
 
-}
-function thirdLevel() {
+  function thirdLevel(){
+    document.getElementById('btn3').remove();
     document.getElementById('div4').remove();
-    document.getElementById('div5').style.display = 'flex';
+    document.getElementById('div5').style.display='flex'; 
 }
+
+
+function finish(){
+ 
+    
+    document.getElementById('div5').remove();
+}
+document.querySelector('.start-button span').onclick=function(){
+    // let yourName=prompt('whats your name');
+    //console.log(yourName);
+
 
 document.querySelector('.start-button span').onclick = function () {
+
     document.querySelector('.start-button').remove();
 }
 //start page work
@@ -349,8 +363,7 @@ function addRandomImage() {
 
 
 
-
-
+}}
 
 
 

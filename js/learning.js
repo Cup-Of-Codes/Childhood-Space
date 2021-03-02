@@ -353,19 +353,19 @@ function chooseLesson(event) {
       trEl.appendChild(tdEl);
       tdEl.textContent = colorsLesson.arrayOfElemnts[i].elementName;
       tdEl.setAttribute('class', 'numsNav');
-      tdEl.setAttribute('style','color: darkgray;')
-      
+      tdEl.setAttribute('style','color: darkgray;');
+
     }
 
     let trElQ = document.createElement('tr');
-    tableContentEl.appendChild(trElQ); 
+    tableContentEl.appendChild(trElQ);
     let tdElQ = document.createElement('td');
     trElQ.appendChild(tdElQ);
     tdElQ.textContent = 'What is this color ?? ';
     tdElQ.setAttribute('id' ,'question');
     index = generateRandomIndex();
-    colorImg=  addRandomImage(index);
-    
+    colorImg= addRandomImage(index);
+
     trEl.addEventListener('click', chooseColor);
     break;
   case 'sense':
@@ -496,7 +496,7 @@ function chooseColor(event){
     index = generateRandomIndex();
     colorImg = addRandomImage(index);
   }
-  
+
   // let imgEl, imgEl2, tdEl, trEl;
   // divLessonEl.innerHTML = ' ';
   // imgEl = document.createElement('img');
@@ -586,7 +586,7 @@ function generateRandomIndex() {
 function addRandomImage(index){
     // console.log(index);
     // console.log(colorsLesson.arrayOfElemnts[index]);
-    
+
     divLessonEl.innerHTML = ' ';
     let colorimgEl = document.createElement('img');
     divLessonEl.appendChild(colorimgEl);

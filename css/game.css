@@ -1,12 +1,14 @@
 *{
     box-sizing: border-box;
 }
-/* body{
-   background-image: url("https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif");
+
+body{
+   background-image: url("");
    background-repeat: no-repeat;
    background-size: cover;
     font-family: cursive;
-} */
+    background-attachment: fixed;
+}
 
 header nav ul img{
   
@@ -297,12 +299,22 @@ border-radius: 20px;
     width: 680px;
     flex-wrap: wrap;
     margin: 20px auto;
-    /* position: absolute; */
-    /* left: 340px; */
+    position: absolute;
+right: -22px;
     margin-top: 26px;
     position: relative;
-    top: 30px;
-    display: none;
+    top: 800px;
+    display: none; 
+    /* display: flex;
+    width: 680px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    position: absolute;
+    left: 349px;
+    margin-top: 26px;
+    position: absolute;
+    top: 785px;
+    display: none; */
 }
 .container-game2 .game-block{
     height: 200px;
@@ -497,47 +509,83 @@ border-radius: 15px;
 }
 
 #btn2{
-  
-    margin-top: 839px;
+
     width: 200px;
-    height: 41px;
-    display: none;
-/*   
-    width: 200px;
-    height: 41px;
-    display: none;
     position: absolute;
-    top: 106px; */
-   
+    height: 41px;
+    top: 830px;
+    left: 1071px;
+    display: none;
+
+    
+    font-size: larger;
+    background: #2db34a;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    border-radius: 15px;
+    
+    
+    /* margin-top: 839px;
+    width: 200px;
+    height: 41px;
+    display: none; */
+
 }
 
 #btn3{
   
-    margin-top: 839px;
     width: 200px;
+    position: absolute;
     height: 41px;
+    top: 830px;
+    left: 1071px;
     display: none;
+
+    border-radius: 15px;
+    font-size: larger;
+    background: #2db34a;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 
 }
-/* #btn1{
-  
-    margin-top: 839px;
-    width: 200px;
-    height: 41px;
-    display: none;
-
-} */
-
-#shapePic {
+#shapesGame{
     position: absolute;
     top: 60vh;
     left: 34vw;
 }
 
-.shape {
-    margin: 10px;
-}
 
+
+#btn2:hover{
+    background: #ff7b29;
+}
+#btn3:hover{
+    background: #ff7b29;
+/* .shape {
+    margin: 10px;
+
+} */
+}
+#button{
+    display:block;
+    position: absolute;
+    left: 100px;
+    top: 838px;
+    width: 200px;
+    height: 41px;
+    border-radius: 15px;
+    font-size: larger;
+    background: #2db34a;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    
+}
+#button:hover{
+    background: #ff7b29;
+}
 
 
 #btn1{
