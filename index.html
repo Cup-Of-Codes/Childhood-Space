@@ -62,13 +62,19 @@
 
             <section id=optionMain>
                 <div class="optionHome">
+                    <a href="game.html">
                     <img class="game" src="img/game2.jpg" alt="">
-                    <button class="b1" type="button" onclick="document.location=game.html">Game</button>
+                    <button class="b1" type="button" onclick="">Game</button>
+                </a>
                 </div> 
                 <div class="optionHome">
+                    <audio id="myAudio"></audio>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="voices/learning.mp3" type="audio/mpeg">
+                    <a href="learning.html">
                     <img class="learn" src="img/learn.jpg" alt="">
-                    <button class="b2" type="button" onclick="document.location=learn.html">Learn</button>
-
+                    <button class="b2" type="button" hover="playAudio()">Learn</button>
+                </a>
                 </div>
             </section>
 

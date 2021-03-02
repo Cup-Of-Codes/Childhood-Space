@@ -30,4 +30,9 @@ function myFunction(){
     popup.classList.toggle('show');
     
 }
+var x = document.getElementById("myAudio");
+function playAudio() { 
+    x.play(); 
+    console.log("hghj")
 
+  } 
