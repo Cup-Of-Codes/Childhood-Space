@@ -1,13 +1,13 @@
 
 body{
-    /* background-image: url(https://www.ppt-backgrounds.net/thumbs/child---child-template-childs---presentation-keynote.jpeg); */
+     background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif);
      background-color: #ddd; 
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-   
+    
     
     }
 header nav ul img{
@@ -135,7 +135,7 @@ main div{
     box-shadow: 0 9px #999;
     position: relative;
     
-    right: 575px;
+    right: 520px;
     top:370px;
 
     background-color:rgb(48, 194, 48);
@@ -168,7 +168,7 @@ main div{
     box-shadow: 0 9px #999;
     position: relative;
     top:370px;
-    left: 210px;
+    left: 115px;
 
 
     background-color:rgb(48, 194, 48);
@@ -203,7 +203,7 @@ main div{
   }
 .game {
     position:absolute;
-    right: 550px;
+    right: 500px;
     border: 5px solid #555;
     height: 350px;
     width: 155%;
@@ -217,7 +217,7 @@ main div{
 .learn{
     position:absolute;
     border: 5px solid #555;
-    left: 210px;
+    left: 110px;
     height: 340px;
     width: 150%;
     border-radius: 20px;
@@ -250,7 +250,6 @@ label{
 #form{
     position: absolute;
     right: 130px;
-    /* bottom: 10px; */
     font-size: x-large;
     font-family: cursive;
     background-color: lightcoral;
@@ -260,7 +259,7 @@ label{
     border: 3px solid #555;
     width: 150%;
     height: 180px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .cont #saveName{
     display: inline-block;
@@ -309,20 +308,84 @@ label{
 
 
 footer{
-    background-color:  #ccc;
+    background-color:  rgb(171, 223, 230);
     position: relative;
     top: 1021px;
     text-align: center;
     font-family: cursive;
-    font-size: 20px;
+    font-size: 15px;
     
 } 
 .soc li{
     display: inline-block;
     margin: 20px;
+    
 
+}
+.soc img{
+    width:70% ;
 }
 
 .t1{
     border: 4px solid black;
 }
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 285px;
+    background-color: #c74e4e40;
+    color: #020202;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -190px;
+    height: 100px;
+    /* border: 3px solid rgb(104, 102, 102); */
+    border:3px solid black;
+   
+  }
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #c74e4e40 transparent transparent transparent;
+    
+  }
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
