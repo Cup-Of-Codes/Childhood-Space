@@ -1,8 +1,5 @@
 
-// function UserName(name){
-//     this .name=name;
-  
-// }
+`use strict`
 let user;
 function save(){
     let saveName= JSON.stringify(user);
@@ -34,3 +31,4 @@ function myFunction(){
     
 }
 
+/////////////////////////////////////////////////////////////////////
