@@ -32,3 +32,11 @@ function myFunction(){
 }
 
   
+function playAudio(event) { 
+    //console.log(event);
+    let value = event.target.id;
+    //console.log(value);
+    var x = document.getElementById(value+'Voice'); 
+    x.play();
+    
+  } 

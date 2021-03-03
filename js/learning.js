@@ -29,43 +29,43 @@ for (let i = 0; i < 10; i++) {
   let number;
   switch (i) {
   case 0:
-    number = new LessonElement('Zero', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('zero', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 1:
-    number = new LessonElement('One', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('one', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 2:
-    number = new LessonElement('Two', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('two', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 3:
-    number = new LessonElement('Three', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('three', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 4:
-    number = new LessonElement('Four', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('four', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 5:
-    number = new LessonElement('Five', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('five', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 6:
-    number = new LessonElement('Six', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('six', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 7:
-    number = new LessonElement('Seven', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('seven', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 8:
-    number = new LessonElement('Eight', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('eight', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   case 9:
-    number = new LessonElement('Nine', `img/ninenumbers/${i}.png`);
+    number = new LessonElement('nine', `img/ninenumbers/${i}.png`);
     numbersLesson.arrayOfElemnts.push(number);
     break;
   }
@@ -75,28 +75,28 @@ let substractionLesson = new Lesson('Substraction', 'img/subtraction_lessons.png
 
 let colorsLesson = new Lesson('Colors', 'img/colors.jpg');
 let color;
-color = new LessonElement('red','img/colors/red.jpg');
+color = new LessonElement('red','img/colors/red.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('yellow','img/colors/yellow.jpg');
+color = new LessonElement('yellow','img/colors/yellow.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('orange','img/colors/orange.jpg');
+color = new LessonElement('orange','img/colors/orange.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('green','img/colors/green.jpg');
+color = new LessonElement('green','img/colors/green.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('blue','img/colors/blue.jpg');
+color = new LessonElement('blue','img/colors/blue.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('purple','img/colors/purple.jpg');
+color = new LessonElement('purple','img/colors/purple.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('white','img/colors/white.jpg');
+color = new LessonElement('white','img/colors/white.png');
 colorsLesson.arrayOfElemnts.push(color);
 
-color = new LessonElement('black','img/colors/black.jpg');
+color = new LessonElement('pink','img/colors/pink.png');
 colorsLesson.arrayOfElemnts.push(color);
 
 let sensesLesson = new Lesson('Senses', 'img/senses.jpg');
@@ -116,7 +116,8 @@ function chooseOne(event) {
     divNum.appendChild(imgNum);
     imgNum.setAttribute('src', numbersLesson.img);
     imgNum.setAttribute('id', 'numbers');
-    textNum = document.createElement('h3');
+    imgNum.setAttribute('onmouseover', 'playAudio(event)');
+    textNum = document.createElement('h2');
     divNum.appendChild(textNum);
     textNum.textContent = numbersLesson.lessonName;
     divAdd = document.createElement('div');
@@ -124,10 +125,11 @@ function chooseOne(event) {
     divAdd.setAttribute('class', 'mathlessons');
     imageAdd = document.createElement('img');
     divAdd.appendChild(imageAdd);
-    console.log(additionLesson.img);
+    //console.log(additionLesson.img);
     imageAdd.setAttribute('src', additionLesson.img);
-    imageAdd.setAttribute('id', 'add');
-    textAdd = document.createElement('h3');
+    imageAdd.setAttribute('id', 'addition');
+    imageAdd.setAttribute('onmouseover', 'playAudio(event)');
+    textAdd = document.createElement('h2');
     divAdd.appendChild(textAdd);
     textAdd.textContent = additionLesson.lessonName;
     divSub = document.createElement('div');
@@ -136,8 +138,9 @@ function chooseOne(event) {
     imgSub = document.createElement('img');
     divSub.appendChild(imgSub);
     imgSub.setAttribute('src', substractionLesson.img);
-    imgSub.setAttribute('id', 'sub');
-    textSub = document.createElement('h3');
+    imgSub.setAttribute('id', 'subtraction');
+    imgSub.setAttribute('onmouseover', 'playAudio(event)');
+    textSub = document.createElement('h2');
     divSub.appendChild(textSub);
     textSub.textContent = substractionLesson.lessonName;
 
@@ -152,8 +155,9 @@ function chooseOne(event) {
     imgColor = document.createElement('img');
     divColors.appendChild(imgColor);
     imgColor.setAttribute('src', colorsLesson.img);
-    imgColor.setAttribute('id', 'color');
-    textColor = document.createElement('h3');
+    imgColor.setAttribute('id', 'colors');
+    imgColor.setAttribute('onmouseover', 'playAudio(event)');
+    textColor = document.createElement('h2');
     divColors.appendChild(textColor);
     textColor.textContent = colorsLesson.lessonName;
     divSense = document.createElement('div');
@@ -163,7 +167,8 @@ function chooseOne(event) {
     divSense.appendChild(imgSense);
     imgSense.setAttribute('src', sensesLesson.img);
     imgSense.setAttribute('id', 'sense');
-    textSense = document.createElement('h3');
+    imgSense.setAttribute('onmouseover', 'playAudio(event)');
+    textSense = document.createElement('h2');
     divSense.appendChild(textSense);
     textSense.textContent = sensesLesson.lessonName;
   }
@@ -180,7 +185,7 @@ sectionEL.addEventListener('click', chooseLesson);
 function chooseLesson(event) {
   event.preventDefault();
   let value = event.target.id;
-  console.log(event);
+  //console.log(event);
   let h3, img;
   let rows;
   switch (value) {
@@ -195,12 +200,13 @@ function chooseLesson(event) {
       trEl.appendChild(tdEl);
       tdEl.textContent = numbersLesson.arrayOfElemnts[i].elementName;
       tdEl.setAttribute('class', 'numsNav');
-      tdEl.setAttribute('id', 'numberChoice');
+      tdEl.setAttribute('id', numbersLesson.arrayOfElemnts[i].elementName);
+      tdEl.setAttribute('onmouseover','playAudio(event)');
     }
     trEl.addEventListener('click', chooseNumber);
     break;
 
-  case 'add':
+  case 'addition':
     tableContentEl.innerHTML = ' ';
     divLessonEl.innerHTML = ' ';
 
@@ -271,7 +277,7 @@ function chooseLesson(event) {
       }
     }
     break;
-  case 'sub':
+  case 'subtraction':
     tableContentEl.innerHTML = ' ';
     divLessonEl.innerHTML = ' ';
 
@@ -343,7 +349,7 @@ function chooseLesson(event) {
       }
     }
     break;
-  case 'color':
+  case 'colors':
     tableContentEl.innerHTML = ' ';
     divLessonEl.innerHTML = ' ';
     trEl = document.createElement('tr');
@@ -354,6 +360,8 @@ function chooseLesson(event) {
       tdEl.textContent = colorsLesson.arrayOfElemnts[i].elementName;
       tdEl.setAttribute('class', 'numsNav');
       tdEl.setAttribute('style','color: darkgray;');
+      tdEl.setAttribute('id',colorsLesson.arrayOfElemnts[i].elementName);
+      // tdEl.setAttribute('onmouseover','playAudio(event)');
 
     }
 
@@ -371,11 +379,14 @@ function chooseLesson(event) {
   case 'sense':
     tableContentEl.innerHTML = ' ';
     divLessonEl.innerHTML = ' ';
-    let imgSense = document.createElement('img');
-    divLessonEl.appendChild(imgSense);
-    imgSense.setAttribute('src', 'img/senses.jpg');
-    imgSense.setAttribute('id', 'senses');
-    break;
+    let videoSense = document.createElement('iframe');
+    divLessonEl.appendChild(videoSense);
+    videoSense.setAttribute('src', 'https://www.youtube.com/embed/LNajQTnZviQ');
+    videoSense.setAttribute('id', 'sensesVideo');
+    videoSense.setAttribute('frameborder','0');
+    videoSense.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+    //videoSense.setAttribute('allowfullscreen');
+        break;
   }
 }
 
@@ -384,12 +395,12 @@ function chooseLesson(event) {
 let numbersImges = ['img/numbersPic/1-pencil.png',
   'img/numbersPic/2-carrots.png',
   'img/numbersPic/3-apples.png',
-  'img/numbersPic/4-balls.jpg',
-  'img/numbersPic/5-babnana.jpg',
-  'img/numbersPic/6-apples.png',
-  'img/numbersPic/7-ballons.jpg',
-  'img/numbersPic/8-strawberry.png',
-  'img/numbersPic/9-crrots.jpg'
+  'img/numbersPic/4-lady.png',
+  'img/numbersPic/5-ballons.png',
+  'img/numbersPic/6-flowers.png',
+  'img/numbersPic/7-ballons.png',
+  'img/numbersPic/8-colors.png',
+  'img/numbersPic/9-butterfly.png'
 ];
 
 function chooseNumber(event) {
@@ -405,32 +416,32 @@ function chooseNumber(event) {
   imgEl2 = document.createElement('img');
   divLessonEl.appendChild(imgEl2);
   switch (value) {
-  case 'Zero':
+  case 'zero':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[0].img);
     imgEl.setAttribute('class', 'numsDiv');
     break;
-  case 'One':
+  case 'one':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[1].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[0]);
     imgEl2.setAttribute('class', 'numsImgDiv');
 
     break;
-  case 'Two':
+  case 'two':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[2].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[1]);
     imgEl2.setAttribute('class', 'numsImgDiv');
 
     break;
-  case 'Three':
+  case 'three':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[3].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[2]);
     imgEl2.setAttribute('class', 'numsImgDiv');
 
     break;
-  case 'Four':
+  case 'four':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[4].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[3]);
@@ -438,7 +449,7 @@ function chooseNumber(event) {
 
 
     break;
-  case 'Five':
+  case 'five':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[5].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[4]);
@@ -446,7 +457,7 @@ function chooseNumber(event) {
 
 
     break;
-  case 'Six':
+  case 'six':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[6].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[5]);
@@ -454,7 +465,7 @@ function chooseNumber(event) {
 
 
     break;
-  case 'Seven':
+  case 'seven':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[7].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[6]);
@@ -462,17 +473,17 @@ function chooseNumber(event) {
 
 
     break;
-  case 'Eight':
+  case 'eight':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[8].img);
     imgEl.setAttribute('class', 'numsDiv');
     imgEl2.setAttribute('src', numbersImges[7]);
     imgEl2.setAttribute('class', 'numsImgDiv');
 
     break;
-  case 'Nine':
+  case 'nine':
     imgEl.setAttribute('src', numbersLesson.arrayOfElemnts[9].img);
     imgEl.setAttribute('class', 'numsDiv');
-    imgEl2.setAttribute('src', numbersImges[9]);
+    imgEl2.setAttribute('src', numbersImges[8]);
     imgEl2.setAttribute('class', 'numsImgDiv');
 
 
@@ -487,80 +498,22 @@ function chooseColor(event){
   //console.log(event);
   //console.log(colorImg);
   let value = event.target.innerText;
-  for (let i = 0; i < 15; i++) {
-    if(value === colorImg.elementName )
-    {
-      console.log(index);
-      trEl.cells[index].setAttribute('onClick', `this.style.backgroundColor='${colorsLesson.arrayOfElemnts[index].elementName}'`);
-    }
-    else {
-      break;
-    }
+  if(value === colorImg.elementName){
+    let v = document.getElementById(value+'Voice');
+    //console.log(value);
+    v.play();
+    
     index = generateRandomIndex();
     colorImg = addRandomImage(index);
   }
-  // let imgEl, imgEl2, tdEl, trEl;
-  // divLessonEl.innerHTML = ' ';
-  // imgEl = document.createElement('img');
-  // divLessonEl.appendChild(imgEl);
-  // imgEl2 = document.createElement('img');
-  // divLessonEl.appendChild(imgEl2);
-  // switch (value) {
-  // case 'red':
-  //   imgEl.setAttribute('src', colorsArry[5]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //   break;
-  // case 'yellow':
-  //   imgEl.setAttribute('src', colorsArry[7]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //  // imgEl2.setAttribute('src', numbersImges[0]);
-  //  // imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  // case 'green':
-  //   imgEl.setAttribute('src', colorsArry[2]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  // //  imgEl2.setAttribute('src', numbersImges[1]);
-  //   //imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  // case 'black':
-  //   imgEl.setAttribute('src', colorsArry[0]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //   //imgEl2.setAttribute('src', numbersImges[2]);
-  //   //imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  // case 'blue':
-  //   imgEl.setAttribute('src', colorsArry[1]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //  // imgEl2.setAttribute('src', numbersImges[3]);
-  //   //imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  // case 'purple':
-  //   imgEl.setAttribute('src', colorsArry[4]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //  // imgEl2.setAttribute('src', numbersImges[5]);
-  //   //imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  // case 'white':
-  //   imgEl.setAttribute('src', colorsArry[6]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //  // imgEl2.setAttribute('src', numbersImges[6]);
-  //   //imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  //   case 'orange':
-  //   imgEl.setAttribute('src', colorsArry[3]);
-  //   imgEl.setAttribute('class', 'numsDiv');
-  //   generateRandomIndex();
-  //  // imgEl2.setAttribute('src', numbersImges[6]);
-  //   //imgEl2.setAttribute('class', 'numsImgDiv');
-  //   break;
-  // }
+  else {
+    let v = document.getElementById('nonoVoice');
+    v.play();
+    return;
+  }
+    
+  
+  
 }
 function generateRandomIndex() {
   let randomIndex = Math.floor(Math.random() * colorsLesson.arrayOfElemnts.length);
@@ -576,3 +529,12 @@ function addRandomImage(index){
     colorimgEl.setAttribute('class','colorimg');
     return colorsLesson.arrayOfElemnts[index];
 }
+
+function playAudio(event) { 
+  //console.log(event);
+  let value = event.target.id;
+  //console.log(value);
+  var x = document.getElementById(value+'Voice'); 
+  x.play();
+  
+} 

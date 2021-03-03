@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,30 +53,34 @@
             <form id="form">
                 <fieldset>
                     <legend></legend>
-                    <label for="name">Your name:</label>
+                    <label for="name">What is Your Name:</label>
                     <input type="text" id="name" name="name">
-                    <input type="submit" value="Click Here" id="saveName" href=#popup1>
+                    <input type="submit" value="Enter" id="saveName" href=#popup1>
 
                 </fieldset>
             </form>
 
             <section id=optionMain>
-                <div class="optionHome">
+                <div class="optionHome" id ="games" onmouseover="playAudio(event)">
                     <a href="game.html">
                     <img class="game" src="img/game2.jpg" alt="">
-                    <button class="b1" type="button" onclick="">Game</button>
+                    <p id="gameOption">Games</p>
                 </a>
                 </div> 
-                <div class="optionHome">
-                    <audio id="myAudio"></audio>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="voices/learning.mp3" type="audio/mpeg">
+                <div class="optionHome" id ="learning" onmouseover="playAudio(event)">
                     <a href="learning.html">
                     <img class="learn" src="img/learn.jpg" alt="">
-                    <button class="b2" type="button" hover="playAudio()">Learn</button>
+                    <p id="learnOption">Learning</p>
                 </a>
                 </div>
             </section>
+
+            <audio id="gamesVoice">
+                <source src="voices/games.mp3">
+              </audio>
+              <audio id="learningVoice">
+                <source src="voices/learning.mp3">
+              </audio>
 
         </div>
         
@@ -83,14 +89,16 @@
             </div>
         </div>
 
+        <!-- <div id="kidsImg">
+            <img src="img/girl.jpg" id="kids">
+        </div> -->
+
     </main>
 
 
     <footer>
-        <div class="t1"></div>
-        <p class="p1">Childhood</p>
-        <p class="p2">Space</p>
-        <div class="t2"></div>
+        <h3 class="p1">Childhood</h3>
+        <h3 class="p2">Space</h3>
         <ul class="soc">
             <li><img src="img/face.png" alt=""></li>
             <li><img src="img/instagram.png" alt=""></li>
@@ -98,7 +106,7 @@
             <li><img src="img/gmail.png" alt=""></li>
         </ul>
 
-        <p class="p3">2021&copy;Childhood Space. All Rights Reserved</p>
+        <h3 class="p3">2021&copy;Childhood Space. All Rights Reserved</h3>
     </footer>
     <script src="app.js"></script>
 </body>
