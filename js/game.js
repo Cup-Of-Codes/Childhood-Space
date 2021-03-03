@@ -7,9 +7,11 @@
 // buttonMemory.addEventListener('click', showingMemGam)
 function playGame() {
     // document.getElementById('div1').style.display='flex';
+    
     document.getElementById('div2').style.display = 'flex';
     document.getElementById('div3').style.display = 'flex';
     document.getElementById('btn2').style.display = 'block';
+    divShape.innerHTML = ' ';
 }
 
 
@@ -20,12 +22,14 @@ function secondLevel() {
     document.getElementById('div3').remove();
     document.getElementById('div4').style.display = 'flex';
     document.getElementById('btn3').style.display = 'block';
+    
 }  
 
     function thirdLevel() {
         document.getElementById('btn3').remove();
         document.getElementById('div4').remove();
         document.getElementById('div5').style.display = 'flex';
+        document.getElementById('button').style.display ='block';
     }
 
 
@@ -284,6 +288,12 @@ function secondLevel() {
             'img/shapes/cube.png'
         ];
         function playShapeGame() {
+            document.getElementById('btn2').style.display = "none";
+            document.getElementById('btn3').style.display = "none";
+            //document.getElementById('button').style.display ='none';
+            document.getElementById('div3').style.display = "none";
+            document.getElementById('div4').style.display = "none";
+            document.getElementById('div5').style.display = "none";
             addRandomImage();
         }
         divShape.addEventListener('click', checkShape);
@@ -345,3 +355,12 @@ function secondLevel() {
                 }
             }
         }
+
+        function playAudio(event) { 
+            //console.log(event);
+            let value = event.target.id;
+            //console.log(value);
+            var x = document.getElementById(value+'Voice'); 
+            x.play();
+            
+          }

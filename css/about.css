@@ -1,13 +1,10 @@
-body{
+html{
     
- background-image: url(https://i.pinimg.com/originals/7f/10/5e/7f105e4d0bbece23e323740bac9e40bf.gif); 
-     background-image: linear-gradient(to right, rgb(236, 127, 127) , rgb(236, 236, 22)); 
-    background-color: #ccc;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    background-image: url('https://stalbertcreativepreschool.com/wp-content/uploads/2011/09/BackgroundImage12-1024x725.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: cursive;
+    background-attachment: fixed;
 }
 header nav ul img{
     width:70px;
@@ -98,183 +95,57 @@ footer{
 
 }
 .soc img{
-    width:70% ;
+    width:22% ;
 }
 
-  .image{
-    /* position: absolute; */
-    /* top: 30px; */
-    margin-top: 250px;
-    
+.iDiv {
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+    margin-right: 50px ;
+    border : 2px solid rebeccapurple;
+    margin-top: 200px;
+    border-radius: 30px;
+    width: 210px;
+}
 
-   
+.iDiv:hover {
+    transform : scale(1.2);
+}
+.iDiv #anagheemImg {
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
 
 }
- .image img{
-    
-    width: 22%;
-    height: 260px;
-    /* border: 5px solid rgb(14, 13, 13); */
-    margin-left: 20px;
-    border-radius: 50%;
-} 
-.two{
-    margin-left: 180px;
-}
-/* .social1{
-    position: absolute;
-    top: 30px;
-    margin-top: 550px;
-    margin-left: 280px;
-    font-size: 30px;
 
+.iDiv #malakImg {
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
 
-} */
-.moh{
-    filter: drop-shadow(8px 8px 10px green);
 }
-.moh:hover{
-    transform:skewX(1.8deg);
+.iDiv #saraImg {
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
+
 }
-.kh{
-    position: absolute;
-    
-    left: 796px;
-    top: 621px;
-    filter: drop-shadow(8px 8px 10px rgb(251, 255, 1));
+.iDiv #mohImg {
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
+
 }
-.kh:hover{
-    transform:skewX(1.8deg);
+.iDiv #khalidImg {
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
 }
-.sa{
-    position: absolute;
-    left: 1000px;
-    filter: drop-shadow(8px 8px 10px rgb(255, 0, 0));
-}
-.sa:hover{
-    transform:skewX(1.8deg);
-}
-.ana{
-    position: absolute;
-    top: 621px;
-    right: 821px;
-    filter: drop-shadow(8px 8px 10px rgb(26, 1, 255));
-}
-.ana:hover{
-    transform:skewX(1.8deg);
-}
-.mal{
-    position: absolute;
-    top: 255px;
-    left: 494px;
-    filter: drop-shadow(8px 8px 10px rgb(0, 162, 255));
-}
-.mal:hover{
-    transform:skewX(1.8deg);
-}
-.mohammad h1{
-    position: absolute;
-    margin-bottom: 15px;
-    top: 528px;
-    left: 27px;
-    font-size: 30px;
-    font-family: cursive;
-}
- .mohammad img{
-    
-     margin-right: 10px;
-     margin-bottom: 20px;
-     margin-left: 10px;
-   margin-top: 50px;
-     width: 10%;
-      
-}
-.mohammad section{
-    position: absolute;
-    left: 70px;
-}
-.sara h1{
-    position: absolute;
-    margin-bottom: 15px;
-    left: 1078px;
-    font-size: 30px;
-    font-size: 30px;
-    font-family: cursive;
-}
-.sara img{
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-  margin-top: 50px; 
-  width: 10%;
-}
-.sara section{
-    position: absolute;
-    left: 1085px;
-    top: 500px;
-}
-.anagheem h1{
-    position: absolute;
-    margin-bottom: 15px;
-    bottom: 120px;
-    left: 251px;
-    font-size: 30px;
-    font-family: cursive;
-    top: 891px;
-}
-.anagheem img{
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-  margin-top: 50px;
-  width: 10%;
-}
-.anagheem section{
-    position: absolute;
-    left: 273px;
-    top: 887px;
-}
-.malak h1{
-    position: absolute;
-    /* margin-bottom: 40px;
-    bottom: 400px; */
-    left: 550px;
-    font-size: 30px;
-    font-family: cursive;
-    top: 528px;
-}
-.malak img{
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-  margin-top: 50px;
-  width: 10%;
-}
-.malak section{
-    position: absolute;
-    left: 570px;
-    top: 525px;
-}
-.khaled h1{
-    position: absolute;
-    margin-bottom: 15px;
-    bottom: 120px;
-    left: 879px;
-    font-size: 30px;
-    font-family: cursive;
-    top: 895px;
-}
-.khaled img{
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-  margin-top: 50px; 
-  width: 10%;
-}
-.khaled section{
-    position: absolute;
-    left: 893px;
-    top: 888px;
+
+.github {
+    width: 10%;
+    height: 15%;
 }
 .final{
     position: absolute;
@@ -284,4 +155,26 @@ footer{
 }
 
 
+footer {
+    position: relative;
+    top: 140px;
+    border-top: solid 1px rgb(179, 179, 179);
+    text-align: center;
+    padding-bottom: 20px;
+}
 
+footer img {
+    position: relative;
+    right : 350px;
+    bottom : 55px;
+    padding-bottom: 0px;
+}
+
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Noto Serif', serif;
+    color: rgb(167, 167, 167);
+    font-size: small;
+}
