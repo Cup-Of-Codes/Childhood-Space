@@ -201,7 +201,7 @@ function chooseLesson(event) {
       tdEl.textContent = numbersLesson.arrayOfElemnts[i].elementName;
       tdEl.setAttribute('class', 'numsNav');
       tdEl.setAttribute('id', numbersLesson.arrayOfElemnts[i].elementName);
-      tdEl.setAttribute('onmouseover','playAudio(event)');
+      tdEl.setAttribute('onclick','playAudio(event)');
     }
     trEl.addEventListener('click', chooseNumber);
     break;
