@@ -288,20 +288,33 @@ border-radius: 20px;
     height: 70%;
 }
 
-footer{    
-    position: relative;
-    top: 100vh;
-    text-align: center;
-    font-family: 'indie Flower' cursive;
-    font-size: 15px;
-    
-} 
-.soc li{
-    display: inline-block;
-    margin: 20px;
-    
 
+footer {
+    position: relative;
+    top: 60vh;
+        text-align: center;
+    padding-bottom: 20px;
 }
-.soc img{
-    width:70% ;
+
+footer img {
+    position: relative;
+    right: 1vw;
+    bottom: 8px;
+    padding-bottom: 0px;
+    width: 15%;
+}
+
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 0, 0);
+    font-size: medium;
+}
+ 
+#line {
+    position: absolute;
+    width: 40vw;
+    left: 29vw;
 }

@@ -235,20 +235,20 @@ function chooseLesson(event) {
         trEl.appendChild(tdEl);
         let imgEl = document.createElement('img');
         tdEl.appendChild(imgEl);
-        imgEl.setAttribute('src', 'img/addition01-01.gif');
+        imgEl.setAttribute('src', 'img/numbersPic/2-carrots.png');
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
         imgEl = document.createElement('img');
         tdEl.appendChild(imgEl);
-        imgEl.setAttribute('src', 'img/addition01-02.gif');
+        imgEl.setAttribute('src', 'img/3-crrots.png');
         break;
       case 3:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        tdEl.textContent = 'Count how many triangles are in Set A... There are 2!';
+        tdEl.textContent = 'Count how many carrots are in Set A... There are 2!';
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        tdEl.textContent = 'Count how many triangles are in Set B... There are 3!';
+        tdEl.textContent = 'Count how many carrots are in Set B... There are 3!';
         break;
       case 4:
         tdEl = document.createElement('td');
@@ -260,12 +260,12 @@ function chooseLesson(event) {
         trEl.appendChild(tdEl);
         let finalImgEl = document.createElement('img');
         tdEl.appendChild(finalImgEl);
-        finalImgEl.setAttribute('src', 'img/addition01-03 (1).gif');
+        finalImgEl.setAttribute('src', 'https://images-na.ssl-images-amazon.com/images/I/41XW56vYO1L._AC_.jpg');
         break;
       case 6:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        tdEl.textContent = 'Count how many triangles are in this set... There are 5!';
+        tdEl.textContent = 'Count how many carrots are in this set... There are 5!';
         break;
       case 7:
         tdEl = document.createElement('td');
@@ -297,49 +297,42 @@ function chooseLesson(event) {
         trEl.appendChild(tdEl);
         let imgEl = document.createElement('img');
         tdEl.appendChild(imgEl);
-        imgEl.setAttribute('src', 'img/subLesson/subtraction01-01.gif');
+        imgEl.setAttribute('src', 'https://thumbs.dreamstime.com/b/dancing-bananas-five-cartoon-bananas-dancing-playing-night-away-115833900.jpg');
 
         break;
       case 2:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        tdEl.textContent = 'Count how many triangles are in this set...  There are 5!';
+        tdEl.textContent = 'Count how many bananas are in this set...  There are 5!';
         // tdEl.setAttribute('class', 'imgCentered');
         break;
       case 3:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        tdEl.textContent = 'Now, take two triangles away...';
+        tdEl.textContent = 'Now, take two bananas away...';
         break;
       case 4:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        let pimgEl = document.createElement('img');
-        tdEl.appendChild(pimgEl);
-        pimgEl.setAttribute('src', 'img/subLesson/subtraction01-02.gif');
-        break;
-      case 5:
-        tdEl = document.createElement('td');
-        trEl.appendChild(tdEl);
         let timgEl = document.createElement('img');
         tdEl.appendChild(timgEl);
-        timgEl.setAttribute('src', 'img/subLesson/subtraction01-03.gif');
+        timgEl.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNeswSSAahe8zveCQSVj4M4XM1NxWD1vAFVA&usqp=CAU');
         timgEl.setAttribute('class', 'imgSub');
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
         timgEl = document.createElement('img');
         tdEl.appendChild(timgEl);
-        timgEl.setAttribute('src', 'img/subLesson/subtraction01-04.gif');
+        timgEl.setAttribute('src', 'https://rlv.zcache.se/dansbananmugg_kaffemugg-rb9cf924a81b54487a963d74750864af1_x7jg5_8byvr_307.jpg?rvtype=content');
         timgEl.setAttribute('class', 'imgSub');
         timgEl.setAttribute('id', 'twotriangle');
 
         break;
-      case 6:
+      case 5:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
-        tdEl.textContent = 'Count how many triangles are left in the set...  There are 3 left!	';
+        tdEl.textContent = 'Count how many bananas are left in the set...  There are 3 left!	';
         break;
-      case 7:
+      case 6:
         tdEl = document.createElement('td');
         trEl.appendChild(tdEl);
         let resultImgEl = document.createElement('img');
