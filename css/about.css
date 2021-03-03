@@ -80,23 +80,6 @@ header{
     
 
 }
-footer{    
-    position: relative;
-    top: 100vh;
-    text-align: center;
-    font-family: 'indie Flower' cursive;
-    font-size: 15px;
-    
-} 
-.soc li{
-    display: inline-block;
-    margin: 20px;
-    
-
-}
-.soc img{
-    width:22% ;
-}
 
 .iDiv {
     margin: 0 auto;
@@ -158,23 +141,29 @@ footer{
 footer {
     position: relative;
     top: 140px;
-    border-top: solid 1px rgb(179, 179, 179);
-    text-align: center;
+        text-align: center;
     padding-bottom: 20px;
 }
 
 footer img {
     position: relative;
-    right : 350px;
-    bottom : 55px;
+    right: 1vw;
+    bottom: 8px;
     padding-bottom: 0px;
+    width: 15%;
 }
 
 
 footer p {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'Noto Serif', serif;
-    color: rgb(167, 167, 167);
-    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 0, 0);
+    font-size: medium;
+}
+ 
+#line {
+    position: absolute;
+    width: 40vw;
+    left: 29vw;
 }
