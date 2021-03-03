@@ -32,12 +32,13 @@ function secondLevel() {
         document.getElementById('button').style.display ='block';
     }
 
-
     function finish() {
-
         document.getElementById('div5').remove();
         document.getElementById('div6').remove();
     }
+    
+    
+        //    document.getElementById('button').remove();
     // document.querySelector('.start-button span').onclick = function () {
     //     // let yourName=prompt('whats your name');
     //     //console.log(yourName);
@@ -288,6 +289,7 @@ function secondLevel() {
             'img/shapes/cube.png'
         ];
         function playShapeGame() {
+        
             document.getElementById('btn2').style.display = "none";
             document.getElementById('btn3').style.display = "none";
             //document.getElementById('button').style.display ='none';
