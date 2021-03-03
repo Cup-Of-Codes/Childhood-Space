@@ -283,7 +283,7 @@ let sectionShape = document.getElementById('shapesGame');
 let divShape = document.getElementById('shapePic');
 let index;
 let questionEl, imgEl;
-let shapesName = ['Square', 'Circle', 'Triangle', 'Rectangle', 'Star', 'Cube'];
+let shapesName = ['square', 'circle', 'triangle', 'rectangle', 'star', 'cube'];
 let shapesPic = ['img/shapes/square.png',
     'img/shapes/circle.png',
     'img/shapes/triangle.png',
@@ -305,7 +305,8 @@ function checkShape(event) {
     event.preventDefault();
     let value = event.target.id;
     if (value === shapesName[index]) {
-        let v = document.getElementById('great-jobVoice');
+        // console.log(value);
+        let v = document.getElementById(value+'Voice');
         v.play();
         addRandomImage();
     }
@@ -352,12 +353,12 @@ function addRandomImage() {
     while (leftIndex === middleIndex || leftIndex === rightIndex || middleIndex === rightIndex);
     let flag = 1;
     index = generateRandomIndex();
-    console.log(preIndecies);
-    console.log(index);
+    //console.log(preIndecies);
+    //console.log(index);
     while (flag) {
         index = generateRandomIndex();
         if (preIndecies.includes(index)) {
-            console.log('if statement');
+            //console.log('if statement');
             flag = 0;
             questionEl = document.createElement('h2');
             divShape.appendChild(questionEl);
